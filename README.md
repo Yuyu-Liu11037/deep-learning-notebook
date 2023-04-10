@@ -28,7 +28,7 @@ This Github repository is a collection of learning materials for beginners to le
 ## 4. Book
 **No.** |**Name** |**Link** 
 :-: | :-: | :- 
-01 |**Deep Learning**|[深度学习_原理与代码实现](https://github.com/MingchaoZhu/DeepLearning)
+01 |**Deep Learning**|[deep learning](https://www.deeplearningbook.org/) & [深度学习_原理与代码实现](https://github.com/MingchaoZhu/DeepLearning)
 
 ## 5. Resource
 **No.** |**Name** |**Link** 
