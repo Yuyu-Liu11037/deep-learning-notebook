@@ -33,14 +33,17 @@ This Github repository is a collection of learning materials for beginners to le
 01 |**Deep Learning**|[deep learning](https://www.deeplearningbook.org/) & [深度学习_原理与代码实现](https://github.com/MingchaoZhu/DeepLearning); [Practical deep learning](https://course.fast.ai/)
 
 ## 5. Resource
-**No.** |**Name** |**Link** 
-:-: | :-: | :- 
+**No.** |**Name** |**Link** | **Secondary Link**
+:-: | :-: | :-: | :-
 01 |**自监督学习**|[图解自监督学习](https://zhuanlan.zhihu.com/p/184995155)
 02 |**机器学习原理**|[机器学习笔记整理](https://github.com/shunliz/Machine-Learning)
+03 |**Code Implementation**|[CNN](https://blog.paperspace.com/writing-cnns-from-scratch-in-pytorch/) | [torch.torchvision.Resize()](https://www.tutorialspoint.com/pytorch-how-to-resize-an-image-to-a-given-size)
+04 |**VGG** |[快速总结](https://blog.csdn.net/qq_19329785/article/details/84504722#comments_15152607)
 
 ## 6. Paper 
 **Year** |**Conference** |**Link** 
 :-: | :-: | :- 
+2015 | ICLR| [VGGNet](https://arxiv.org/abs/1409.1556) and Community Code
 2021 | CVM | [RGB-D Salient Object Detection- A Survey](https://arxiv.org/abs/2008.00230)
 2022 | AAAI | [Self-Supervised Pretraining for RGB-D Salient Object Detection](https://arxiv.org/abs/2101.12482)
 2022 | ACCV | [Revisiting Image Pyramid Structure for High Resolution Salient Object Detection](https://arxiv.org/abs/2209.09475)
@@ -52,3 +55,9 @@ This Github repository is a collection of learning materials for beginners to le
 :-: | :-: | :- 
 01 |**Research Skills**|[CS290: Seminar on Effective Research Practices & Academic Culture](https://yanivyacoby.github.io/harvard-cs290/); [How to Read a Paper](https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf)
 02 |**Float Point Arithmetic**|https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html
+03 |**Paper Implementation**|https://github.com/labmlai/annotated_deep_learning_paper_implementations
+
+## 8. Problems
+**No.** |**Name**
+:-: | :-: 
+01  | [model.parameters()](https://colab.research.google.com/drive/144JjoYKYxJeCKzJwTg_a3eX-7Ca3soox#scrollTo=6lMu7qpDNZ4p)
