@@ -39,6 +39,13 @@ This Github repository is a collection of learning materials for beginners to le
 02 |**机器学习原理**|[机器学习笔记整理](https://github.com/shunliz/Machine-Learning)
 03 |**Code Implementation**|[CNN](https://blog.paperspace.com/writing-cnns-from-scratch-in-pytorch/) | [torch.torchvision.Resize()](https://www.tutorialspoint.com/pytorch-how-to-resize-an-image-to-a-given-size)
 04 |**VGG** |[快速总结](https://blog.csdn.net/qq_19329785/article/details/84504722#comments_15152607)
+05 |**梯度消失以及解决方法** |[梯度消失](https://blog.csdn.net/qq_25737169/article/details/78847691); [Batch Normalization详解](https://blog.csdn.net/qq_25737169/article/details/79048516)
+06 |**反向传播更新参数** |https://mattmazur.com/2015/03/17/a-step-by-step-backpropagation-example/
+07 |**全卷积网络FCN** |https://blog.csdn.net/qq_27825451/article/details/89355174
+08 |**SegNet** |https://blog.csdn.net/qq_27825451/article/details/89451438
+09 |**U-net**|[源码](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
+10 |**SPP-net**|https://blog.csdn.net/yxq5997/article/details/53667394
+11 |**DeepLab v3+**|https://learnopencv.com/deeplabv3-ultimate-guide/#Going-From-DeepLabv3-To-DeepLabv3+
 
 ## 6. Paper 
 **Year** |**Conference** |**Link** 
@@ -60,4 +67,4 @@ This Github repository is a collection of learning materials for beginners to le
 ## 8. Problems
 **No.** |**Name**
 :-: | :-: 
-01  | [model.parameters()](https://colab.research.google.com/drive/144JjoYKYxJeCKzJwTg_a3eX-7Ca3soox#scrollTo=6lMu7qpDNZ4p)
+01  | [model.parameters()](https://colab.research.google.com/drive/144JjoYKYxJeCKzJwTg_a3eX-7Ca3soox#scrollTo=6lMu7qpDNZ4p); nn.Dropout()
