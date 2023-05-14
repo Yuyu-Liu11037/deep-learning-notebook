@@ -46,6 +46,9 @@ This Github repository is a collection of learning materials for beginners to le
 09 |**U-net**|[源码](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/)
 10 |**SPP-net**|https://blog.csdn.net/yxq5997/article/details/53667394
 11 |**DeepLab v3+**|https://learnopencv.com/deeplabv3-ultimate-guide/#Going-From-DeepLabv3-To-DeepLabv3+
+12 |**Code**|[Pytorch-Segmentation](https://github.com/yassouali/pytorch-segmentation#models)
+13 |**Transformer**|[详解Transformer](https://zhuanlan.zhihu.com/p/48508221)
+13'|**Swin Transformer**|[Swin Transformer论文详解](https://www.overleaf.com/project/6436bcbfc267571f622b3809)
 
 ## 6. Paper 
 **Year** |**Conference** |**Link** 
@@ -55,6 +58,7 @@ This Github repository is a collection of learning materials for beginners to le
 2022 | AAAI | [Self-Supervised Pretraining for RGB-D Salient Object Detection](https://arxiv.org/abs/2101.12482)
 2022 | ACCV | [Revisiting Image Pyramid Structure for High Resolution Salient Object Detection](https://arxiv.org/abs/2209.09475)
 2023 | TCSVT | [HRTransNet- HRFormer-Driven Two-Modality Salient Object Detection](https://arxiv.org/abs/2301.03036)
+2023 | Preprint | [EHSNet: End-to-End Holistic Learning Network for Large-Size Remote Sensing Image Semantic Segmentation](https://arxiv.org/abs/2211.11316)
 
 
 ## 7. Other Materials
