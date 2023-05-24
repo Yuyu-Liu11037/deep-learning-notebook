@@ -49,6 +49,9 @@ This Github repository is a collection of learning materials for beginners to le
 12 |**Code**|[Pytorch-Segmentation](https://github.com/yassouali/pytorch-segmentation#models)
 13 |**Transformer**|[详解Transformer](https://zhuanlan.zhihu.com/p/48508221)
 13'|**Swin Transformer**|[Swin Transformer论文详解](https://www.overleaf.com/project/6436bcbfc267571f622b3809)
+13''|**Attention Mechanism**|[轴注意力](https://www.jianshu.com/p/9b5c5a4d0bed)
+14 |**Image Pyramid (Traditional)**|[图像金字塔](https://zhuanlan.zhihu.com/p/112040797)
+15 |**Image Pyramid (Deep Learning)**|[LapSRN](https://blog.csdn.net/shwan_ma/article/details/78690974); [LRR](https://blog.csdn.net/Action_now_zj/article/details/110560758); [Use LRR in SOD](https://blog.csdn.net/qq_41684249/article/details/118194011)
 
 ## 6. Paper 
 **Year** |**Conference** |**Link** 
