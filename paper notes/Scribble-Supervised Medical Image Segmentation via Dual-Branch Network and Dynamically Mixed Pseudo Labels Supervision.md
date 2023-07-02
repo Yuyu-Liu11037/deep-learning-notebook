@@ -24,7 +24,7 @@ The network consists of one encoder and two decoders:
 1. The encoder $\theta_e$ is used for feature extraction.
 2. Two decoders ($\theta_{d1}$ (used for segmentation),$\theta_{d2}$(used for supplementary training)), respectively. 
    
-   $\theta_e$ and $\theta_{d1}$ come from the general [UNet], while $\theta_{d2}$ is embedded into UNet as a perturbed decoder, where the [droupout] is used to introduce perturbation at the feature level.
+   $\theta_e$ and $\theta_{d1}$ come from the general [UNet](https://github.com/milesial/Pytorch-UNet), while $\theta_{d2}$ is embedded into UNet as a perturbed decoder, where the droupout is used to introduce perturbation at the feature level.
    
    This design has 2 advantages:
    - It can be against the inherent weakness of pseudolabel in the single branch network, as the two branches’ outputs are diﬀerent due to the feature perturbation.

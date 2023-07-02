@@ -8,12 +8,8 @@ This Github repository is a collection of learning materials for beginners to le
 01|**Anaconda**|https://docs.anaconda.com/navigator/tutorials/index.html
 02|**Docker**|https://docs.docker.com/
 03|**Git**|[Learn Git](https://git-scm.com/book/en/v2); [Learn Git Branching](https://learngitbranching.js.org/?locale=zh_CN); [MIT Missing Semester](https://missing.csail.mit.edu/2020/)
-04|**LaTeX**|[Overleaf](https://www.overleaf.com/)
-05|**Vim**|[Vimrc](https://github.com/amix/vimrc); [ctrlpvim](https://github.com/ctrlpvim/ctrlp.vim)
-06|**shell**|[shellcheck](https://github.com/koalaman/shellcheck); [the art of command line](https://github.com/jlevy/the-art-of-command-line)
-07|**CUDA**|https://arxiv.org/abs/2101.12482
-08|**Caffe**|https://github.com/BVLC/caffe
-09|**Google Colab**|[Colab](https://colab.research.google.com/#scrollTo=GJBs_flRovLc)
+04|**Vim**|[Vimrc](https://github.com/amix/vimrc); [ctrlpvim](https://github.com/ctrlpvim/ctrlp.vim)
+05|**shell**|[shellcheck](https://github.com/koalaman/shellcheck); [the art of command line](https://github.com/jlevy/the-art-of-command-line)
 
 ## 2. Turorial
 **No.** |**Name** |**Link** 
@@ -58,10 +54,11 @@ This Github repository is a collection of learning materials for beginners to le
 15 |**Weak-supervised Learning**|[弱监督语义分割](https://blog.csdn.net/weixin_43624538/article/details/106374306)
 16 |**Semi-supervised Learning**|[Hard/Soft Label](https://ai.stackexchange.com/questions/9635/what-is-the-definition-of-soft-label-and-hard-label)
 17 |**Knowledge Distillation**|[知识蒸馏算法原理](https://developer.aliyun.com/article/1100635)
+18 |**[Tranfer Learning](https://en.wikipedia.org/wiki/Transfer_learning)**|[Domain Adaptation](https://en.wikipedia.org/wiki/Domain_adaptation); [Domain Generalization](https://arxiv.org/abs/2103.03097)
 
 ## 6. Paper 
-**Year** |**Conference** |**Link** 
-:-: | :-: | :- 
+**Year** |**Conference** |**Link** |**Contribution**
+:-: | :-: | :- | :-
 2021 | CVM | [RGB-D Salient Object Detection- A Survey](https://arxiv.org/abs/2008.00230)
 2022 | AAAI | [Self-Supervised Pretraining for RGB-D Salient Object Detection](https://arxiv.org/abs/2101.12482)
 2022 | ACCV | [Revisiting Image Pyramid Structure for High Resolution Salient Object Detection](https://arxiv.org/abs/2209.09475)
@@ -69,6 +66,7 @@ This Github repository is a collection of learning materials for beginners to le
 2023 | TCSVT | [HRTransNet- HRFormer-Driven Two-Modality Salient Object Detection](https://arxiv.org/abs/2301.03036)
 2023 | Preprint | [EHSNet: End-to-End Holistic Learning Network for Large-Size Remote Sensing Image Semantic Segmentation](https://arxiv.org/abs/2211.11316)
 2023 | MICCAI | [Instructive Feature Enhancement for Dichotomous Medical Image Segmentation](https://arxiv.org/abs/2306.03497)
+2023 | CVPR | [Label-Free Liver Tumor Segmentation](https://arxiv.org/abs/2303.14869)|提出了一种自动将健康组织的CT扫描图转换成具有肿瘤的CT扫描图的方法，转换后的图像可以可以被用作神经网络训练
 
 
 ## 7. Other Materials
