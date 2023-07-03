@@ -59,14 +59,16 @@ This Github repository is a collection of learning materials for beginners to le
 ## 6. Paper 
 **Year** |**Conference** |**Link** |**Contribution**
 :-: | :-: | :- | :-
-2021 | CVM | [RGB-D Salient Object Detection- A Survey](https://arxiv.org/abs/2008.00230)
-2022 | AAAI | [Self-Supervised Pretraining for RGB-D Salient Object Detection](https://arxiv.org/abs/2101.12482)
-2022 | ACCV | [Revisiting Image Pyramid Structure for High Resolution Salient Object Detection](https://arxiv.org/abs/2209.09475)
-2022 | MICCAI | [Scribble-Supervised Medical Image Segmentation via Dual-Branch Network and Dynamically Mixed Pseudo Labels Supervision](https://arxiv.org/abs/2203.02106)
-2023 | TCSVT | [HRTransNet- HRFormer-Driven Two-Modality Salient Object Detection](https://arxiv.org/abs/2301.03036)
-2023 | Preprint | [EHSNet: End-to-End Holistic Learning Network for Large-Size Remote Sensing Image Semantic Segmentation](https://arxiv.org/abs/2211.11316)
-2023 | MICCAI | [Instructive Feature Enhancement for Dichotomous Medical Image Segmentation](https://arxiv.org/abs/2306.03497)
-2023 | CVPR | [Label-Free Liver Tumor Segmentation](https://arxiv.org/abs/2303.14869)|提出了一种自动将健康组织的CT扫描图转换成具有肿瘤的CT扫描图的方法，转换后的图像可以可以被用作神经网络训练
+2020 | ECCV | [DETR](https://arxiv.org/abs/2005.12872) | 
+:small_blue_diamond:2021 | CVM | [RGB-D Salient Object Detection- A Survey](https://arxiv.org/abs/2008.00230)
+:small_blue_diamond:2022 | AAAI | [Self-Supervised Pretraining for RGB-D Salient Object Detection](https://arxiv.org/abs/2101.12482)
+:small_blue_diamond:2022 | ACCV | [Revisiting Image Pyramid Structure for High Resolution Salient Object Detection](https://arxiv.org/abs/2209.09475)
+:small_blue_diamond:2022 | MICCAI | [Scribble-Supervised Medical Image Segmentation via Dual-Branch Network and Dynamically Mixed Pseudo Labels Supervision](https://arxiv.org/abs/2203.02106)
+:small_blue_diamond:2023 | TCSVT | [HRTransNet- HRFormer-Driven Two-Modality Salient Object Detection](https://arxiv.org/abs/2301.03036)
+:small_blue_diamond:2023 | Preprint | [EHSNet: End-to-End Holistic Learning Network for Large-Size Remote Sensing Image Semantic Segmentation](https://arxiv.org/abs/2211.11316)
+:small_blue_diamond:2023 | MICCAI | [Instructive Feature Enhancement for Dichotomous Medical Image Segmentation](https://arxiv.org/abs/2306.03497)
+:small_blue_diamond:2023 | CVPR | [Label-Free Liver Tumor Segmentation](https://arxiv.org/abs/2303.14869)|提出了一种自动将健康组织的CT扫描图转换成具有肿瘤的CT扫描图的方法，转换后的图像可以被用作神经网络训练
+:small_blue_diamond:2023 | ISBI | [LABEL-ASSEMBLE: LEVERAGING MULTIPLE DATASETS WITH PARTIAL LABELS](https://arxiv.org/abs/2109.12265) | (hypothesis)具有多个标注类别的数据集能够比只具有interested标注类别的数据集更好地训练模型
 
 
 ## 7. Other Materials
@@ -77,7 +79,8 @@ This Github repository is a collection of learning materials for beginners to le
 03 |**Paper Implementation**|https://github.com/labmlai/annotated_deep_learning_paper_implementations
 
 ## 8. Problems
-**No.** |**Name**
-:-: | :-: 
-01  | [model.parameters()](https://colab.research.google.com/drive/144JjoYKYxJeCKzJwTg_a3eX-7Ca3soox#scrollTo=6lMu7qpDNZ4p); nn.Dropout()
-02 | [Descrepancy: up-sample in paper, down-sample in code](https://github.com/plemeri/InSPyReNet)
+**No.** |**Name** | **Solution**
+:-: | :-: | :-
+01  | [model.parameters()](https://colab.research.google.com/drive/144JjoYKYxJeCKzJwTg_a3eX-7Ca3soox#scrollTo=6lMu7qpDNZ4p); nn.Dropout() |
+02 | [Descrepancy: up-sample in paper, down-sample in code](https://github.com/plemeri/InSPyReNet) |
+03 | torch.Tensor.init() implementation | [C++实现的](https://stackoverflow.com/questions/65445621/where-is-torch-tensor-item-defined-at-the-github)
