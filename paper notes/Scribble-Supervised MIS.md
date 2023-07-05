@@ -76,6 +76,6 @@ Investigated the effect of using diﬀerent supervision approaches for the dual-
 
 ![Figure](../images/Scribble-SupervisedTable2.png "Analysis")
 
-It can be observed that compared with CR and CPS, using our proposed PLS leads to the best performance. 
+It can be observed that compared with CR and CPS, using the proposed PLS leads to the best performance. 
 
 Moreover, the paper also investigated the performance when α is set to a ﬁxed value (0.5) and dynamic values. The result demonstrates the effectiveness of the proposed dynamically mixing strategy and the main ($\theta_{d_1}$) and auxiliary ($\theta_{d_2}$) decoders achieve very similar results.
