@@ -19,15 +19,22 @@
 ## B
 这一部份介绍了作者具体如何整合多个数据集，并训练模型.
 
-输入的图像经过一个shared CNN进行特征提取，提取的特征和[class queries]在一个prediction head里进行内积. 如果图像有label，则采用binary cross entropy(bce) loss: $\mathcal{L}_{bce}$; 如果没有，则用sharpening operator 生成一个pseudo-label，并采用 $\mathcal{L}_{pseudo}$. 另外，对于weakly augmented($a_w$) 和strongly augmented($a_s$) images, 还采用了consistency loss $\mathcal{L}_{consist}$. 最后，总的loss function由binary cross-entropy regularization for annotated labels和pseudo labels & consistency constraints for unlabeled ones组成: $\mathcal{L}_{total}=\mathcal{L}_{bce}+\mathcal{L}_{pseudo}+\mathcal{L}_{consist}$.
+输入的图像经过一个shared CNN进行特征提取，提取的特征和[class queries]在一个prediction head里进行内积. 如果图像有label，则采用binary cross entropy(bce) loss: 
+$\mathcal{L}_{bce}$;
+
+如果没有，则用sharpening operator 生成一个pseudo-label，并采用 $\mathcal{L}_{pseudo}$. 
+
+另外，对于weakly augmented($a_w$) 和strongly augmented($a_s$) images, 还采用了consistency loss $\mathcal{L}_{consist}$. 
+
+最后，总的loss function由binary cross-entropy regularization for annotated labels和pseudo labels & consistency constraints for unlabeled ones组成: $L_{total}=L_{bce}+L_{pseudo}+L_{consist}$.
 
 # Implementation & Validation
-Datasets: 2 computer vision datasets (MNIST, CIFAR10), 7 public medical datasets (COVIDx CXR-2, CheXpert, ChestX-ray14, DermaMNIST, TissueMNIST, OrganAMNIST, RetinaMNIST), and 2 private medical datasets (JHH and HMS).
+**Datasets**: 2 computer vision datasets (MNIST, CIFAR10), 7 public medical datasets (COVIDx CXR-2, CheXpert, ChestX-ray14, DermaMNIST, TissueMNIST, OrganAMNIST, RetinaMNIST), and 2 private medical datasets (JHH and HMS).
 
-Evaluation Metrics: Area Under the Curve (AUC) for disease diagnosis, sensitivity and specificity for disease detection.
+**Evaluation Metrics**: Area Under the Curve (AUC) for disease diagnosis, sensitivity and specificity for disease detection.
 
 ## Results
 ![Fig](../images/LabelAssemble2.png "T1")
-Conclusion: **it is not necessary to complete the missing labels in an assembly of multiple partially labeled datasets.**
+**Conclusion**: **it is not necessary to complete the missing labels in an assembly of multiple partially labeled datasets.**
 
 ![Fig](../images/LabelAssemble3.png "T2")
