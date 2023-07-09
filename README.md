@@ -43,20 +43,19 @@ This Github repository is a collection of learning materials for beginners to le
 **No.** |**Name** |**Link** 
 :-: | :-: | :-
 01 |**机器学习原理**|[机器学习笔记整理](https://github.com/shunliz/Machine-Learning)
-02 |**Domain Generalizaitno**|[域泛化相关知识学习](https://blog.csdn.net/DUDUDUTU/article/details/130782169); [Survey](https://arxiv.org/abs/2103.02503)
+02 |**Domain Generalization**|[域泛化相关知识学习](https://blog.csdn.net/DUDUDUTU/article/details/130782169); [Survey](https://arxiv.org/abs/2103.02503)
 
 ### Deep Learning
 **No.** |**Name** |**Link** 
 :-: | :-: | :-
-01 |**Self-supervised Learning**|[图解自监督学习](https://zhuanlan.zhihu.com/p/184995155)
+01 |**神经网络训练策略**|[自监督(self-supervise)](https://zhuanlan.zhihu.com/p/184995155); [弱监督(weak-supervise)](https://blog.csdn.net/weixin_43624538/article/details/106374306); [semi-supervise]
 02 |**神经网络解读** |[VGG](https://blog.csdn.net/qq_19329785/article/details/84504722#comments_15152607); [FCN](https://blog.csdn.net/qq_27825451/article/details/89355174); [SegNet](https://blog.csdn.net/qq_27825451/article/details/89451438); [U-Net](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/); [SPP-net](https://blog.csdn.net/yxq5997/article/details/53667394); [Deeplab](https://learnopencv.com/deeplabv3-ultimate-guide/#Going-From-DeepLabv3-To-DeepLabv3+); [Transformer](https://zhuanlan.zhihu.com/p/48508221), [Transformer技术综述](https://www.cvmart.net/community/detail/4032);[Swin Transformer](https://www.overleaf.com/project/6436bcbfc267571f622b3809)
 03 |**Attention Mechanism**|[轴注意力](https://www.jianshu.com/p/9b5c5a4d0bed); [注意力机制总结](https://www.cvmart.net/community/detail/4967); [软/硬注意力](https://fuxi.163.com/database/690)
 04 |**Image Pyramid (Traditional)**|[图像金字塔](https://zhuanlan.zhihu.com/p/112040797)
 04'|**Image Pyramid (Deep Learning)**|[LapSRN](https://blog.csdn.net/shwan_ma/article/details/78690974); [LRR](https://blog.csdn.net/Action_now_zj/article/details/110560758); [Use LRR in SOD](https://blog.csdn.net/qq_41684249/article/details/118194011)
-05 |**Weak-supervised Learning**|[弱监督语义分割](https://blog.csdn.net/weixin_43624538/article/details/106374306)
-06 |**Semi-supervised Learning**|[Hard/Soft Label](https://ai.stackexchange.com/questions/9635/what-is-the-definition-of-soft-label-and-hard-label)
-07 |**Knowledge Distillation**|[知识蒸馏算法原理](https://developer.aliyun.com/article/1100635)
-08 |**Object Detection**|[R-CNN系列技术综述](https://zhuanlan.zhihu.com/p/51015050)
+05 |**Semi-supervised Learning**|[Hard/Soft Label](https://ai.stackexchange.com/questions/9635/what-is-the-definition-of-soft-label-and-hard-label)
+06 |**Knowledge Distillation**|[知识蒸馏算法原理](https://developer.aliyun.com/article/1100635)
+07 |**Object Detection**|[R-CNN系列技术综述](https://zhuanlan.zhihu.com/p/51015050)
 
 
 ## 6. Paper 
@@ -84,12 +83,11 @@ This Github repository is a collection of learning materials for beginners to le
 **No.** |**Name** |**Link** 
 :-: | :-: | :- 
 01 |**Research Skills**|[CS290: Seminar on Effective Research Practices & Academic Culture](https://yanivyacoby.github.io/harvard-cs290/); [How to Read a Paper](https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf); [Learning Research](https://github.com/pengsida/learning_research)
-02 |**Float Point Arithmetic**|https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html
-03 |**Paper Implementation**|https://github.com/labmlai/annotated_deep_learning_paper_implementations
+02 |**Programming Basics**|[Float Point Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)
+03 |**Paper Implementation**|[Annotated Implementation](https://github.com/labmlai/annotated_deep_learning_paper_implementations)
 
 ## 8. Problems
 **No.** |**Name** | **Solution**
 :-: | :-: | :-
-01  | [model.parameters()](https://colab.research.google.com/drive/144JjoYKYxJeCKzJwTg_a3eX-7Ca3soox#scrollTo=6lMu7qpDNZ4p); nn.Dropout() |
-02 | [Descrepancy: up-sample in paper, down-sample in code](https://github.com/plemeri/InSPyReNet) |
-03 | torch.Tensor.init() implementation | [C++实现的](https://stackoverflow.com/questions/65445621/where-is-torch-tensor-item-defined-at-the-github)
+01 | [Descrepancy: up-sample in paper, down-sample in code](https://github.com/plemeri/InSPyReNet) |
+02 | torch.Tensor.init() implementation | [C++实现的](https://stackoverflow.com/questions/65445621/where-is-torch-tensor-item-defined-at-the-github)

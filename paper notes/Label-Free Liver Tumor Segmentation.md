@@ -1,4 +1,5 @@
 [Label-Free Liver Tumor Segmentation](https://arxiv.org/abs/2303.14869)
+ - [Label-Free Supervision](https://blog.csdn.net/BVL10101111/article/details/77996225) 出处: [Label-Free Supervision of Neural Networks with Physics and Domain Knowledge](https://arxiv.org/abs/1609.05566) (AAAI 2017的best paper)
 
 ---
 # Motivation, Challenge, Insight & Solution
@@ -17,6 +18,7 @@
 ![Fig](../images/LabelFreeFig2.png "Method")
 
 将健康的肝脏的CT图转化成包含肿瘤的CT图的过程如下：
+
 0. 用pre-trained [nnUNet](https://zhuanlan.zhihu.com/p/100014604)得到粗略的肝脏分割掩码图
 1. **Location selection**: 选择一个不包含任何血管的位置
     用voxel value thresholding(a method of [Digital image processing](https://en.wikipedia.org/wiki/Digital_image_processing#:~:text=Digital%20image%20processing%20is%20the,advantages%20over%20analog%20image%20processing.))分割血管位置. 
@@ -31,7 +33,7 @@
 3. **Shape generation**: 生成椭圆形状的tumor mask
     
     该mask位于 $(x_t,y_t,z_t)$, $x,y,z$方向的半轴长分别通过对均匀分布 $U(0.75r, 1.25r)$ 随机采样得到. 然后对该mask进行弹性形变以丰富diversity，最后对mask应用一个Gaussian filter进行blur，得到 $t''(x,y,z)$.
-4. **Post-processing**: 将tumor $t''(x,y,z)$, scanning volumn $f(x,y,z)$和 liver mask$l(x,y,z)$进行合成，得到:
+4. **Post-processing**: 将tumor $t''(x,y,z)$, scanning volumn $f(x,y,z)$和 liver mask $l(x,y,z)$ 进行合成，得到:
    1. new scanning volumn $f'(x,y,z)=(1-t''(x,y,z))\odot f(x,y,z)+t''(x,y,z)\odot T''(x,y,z)$
    2. new mask with tumor(background=0, liver=1, tumor=2) $l'(x,y,z)=l(x,y,z)+t''(x,y,z)$
    
@@ -43,24 +45,38 @@
 **Dataset**: [LiTS](https://paperswithcode.com/dataset/lits17)
 
 **Evaluation Metrics**: 
- - 肿瘤分割: Dice similarity coefﬁcient (DSC) and Normalized Surface Dice (NSD) with 2mm tolerance
- - 肿瘤检测: Sensitivity and Speciﬁcity 
-        
-    (敏感性衡量了肿瘤检测算法在正确识别出真正存在的肿瘤（真阳性）方面的能力。它是指在所有实际存在的肿瘤中，算法能够正确检测出的比例。敏感性越高，表示算法能够更好地检测出真实的肿瘤，减少漏诊率; 特异性衡量了肿瘤检测算法在正确排除无肿瘤区域（真阴性）方面的能力。它是指在所有无肿瘤区域中，算法能够正确排除的比例。特异性越高，表示算法能够更好地排除无肿瘤区域，减少误诊率)
+ - 肿瘤分割: Dice similarity coefﬁcient ([DSC](https://en.wikipedia.org/wiki/S%C3%B8rensen%E2%80%93Dice_coefficient)) and Normalized Surface Dice (NSD) with 2mm tolerance
+ - 判断该肿瘤图片是真实还是合成: [Sensitivity and Specificity](https://en.wikipedia.org/wiki/Sensitivity_and_specificity)
+   - **Sensitivity** (true positive rate) is the probability of a positive test result, conditioned on the individual truly being positive.
+   - **Specificity** (true negative rate) is the probability of a negative test result, conditioned on the individual truly being negative.
 
 **Implementation**: Based on the [MONAI](https://monai.io/) framework for both U-Net and [Swin UNETR](https://arxiv.org/abs/2201.01266)
 
 ## Results
 1. **Clinical Validation using Visual Turing Test**
 ![Fig](../images/LabelFreeFig3.png "Turing Test")
+
+对50张CT扫描图进行[视觉图灵测试](https://en.wikipedia.org/wiki/Visual_Turing_Test)，其中20张扫描图是来自LiTS的真实肿瘤，其余30张扫描图是来自[WORD](https://github.com/HiLab-git/WORD)的健康肝脏并进行肿瘤合成。
+
+具体地说，两名具有不同经验水平的专业人员在三维视图中检查每个肿瘤样本，将每个样本标记为real、synthetic或unsure。在计算Sensitivity and Specificity时，不考虑unsure的样本。
+
+表中结果显示，对于初级专家，虽然50个样本中有49个样本都得到了明确的判断，但各项评价指标的结果都低于30%，表明他不能很好的区分合成样本和真实样本；对于高级专家，50个样本中有19个样本被标为unsure，意味着这些样本成功混淆了高级专家。
+
 2. **Comparison with State-of-the-art Methods**
 ![Fig](../images/LabelFreeFig4.png "SOTA comparison")
-3. **Generalization to Different Models and Data**
+
+<!-- QUESTION: 这几个方法各自是怎么work的?为什么要用它们进行比较? -->
+<!-- QUESTION: 这篇文章是怎么使用合成的图片进行unsupervised tumor segmentation？ -->
+这一部分将文章提出的label-free肿瘤合成策略与几个[unsupervised]肿瘤分割方法、另一个label-free合成策略、全监督方法进行比较。
+
+可以看到，其他方法最终训练出来的网络效果都不如使用了文章提出的合成策略来训练的网络。
+
+1. **Generalization to Different Models and Data**
 ![Fig](../images/LabelFreeFig5.png "Generalization") 
-4. **Potential in Small Tumor Detection**
+1. **Potential in Small Tumor Detection**
 ![Fig](../images/LabelFreeFig6.png "Small") 
-5. **Controllable Robustness Benchmark**
+1. **Controllable Robustness Benchmark**
 ![Fig](../images/LabelFreeFig7.png "Robustness") 
 医学成像的标准评估仅限于确定人工智能在检测肿瘤方面的有效性, 这是因为现有测试数据集中注释的肿瘤数量不够大，不能代表真实器官中发生的肿瘤，特别是只包含有限的非常小的肿瘤。合成肿瘤可以作为一个可获得的、全面的来源，严格评估人工智能在检测各种不同大小和位置的器官中的肿瘤的性能。
-6. **Ablation Study on Shape Generation**
+1. **Ablation Study on Shape Generation**
 ![Fig](../images/LabelFreeFig8.png "Ablation")  
