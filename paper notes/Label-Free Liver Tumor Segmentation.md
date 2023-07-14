@@ -1,5 +1,5 @@
 [Label-Free Liver Tumor Segmentation](https://arxiv.org/abs/2303.14869)
- - [Label-Free Supervision](https://blog.csdn.net/BVL10101111/article/details/77996225) 出处: [Label-Free Supervision of Neural Networks with Physics and Domain Knowledge](https://arxiv.org/abs/1609.05566) (AAAI 2017的best paper)
+ - [Label-Free Supervision](https://blog.csdn.net/BVL10101111/article/details/77996225)(训练时，不使用任何标签数据) 出处: [Label-Free Supervision of Neural Networks with Physics and Domain Knowledge](https://arxiv.org/abs/1609.05566) (AAAI 2017的best paper)
 
 ---
 # Motivation, Challenge, Insight & Solution
@@ -50,6 +50,8 @@
    - **Sensitivity** (true positive rate) is the probability of a positive test result, conditioned on the individual truly being positive.
    - **Specificity** (true negative rate) is the probability of a negative test result, conditioned on the individual truly being negative.
 
+以上评估指标都计算了[95%的置信区间，并设定显著性水平为0.05](https://manual.sensorsdata.cn/abtesting/latest/abtesting_ConfidenceInterval-110297837.html).
+
 **Implementation**: Based on the [MONAI](https://monai.io/) framework for both U-Net and [Swin UNETR](https://arxiv.org/abs/2201.01266)
 
 ## Results
@@ -71,12 +73,33 @@
 
 可以看到，其他方法最终训练出来的网络效果都不如使用了文章提出的合成策略来训练的网络。
 
-1. **Generalization to Different Models and Data**
+3. **Generalization to Different Models and Data**
 ![Fig](../images/LabelFreeFig5.png "Generalization") 
-1. **Potential in Small Tumor Detection**
+
+为了"verify the generability of synthetic tumors", 作者使用不同数据集训练了不同模型。
+   - Figure 3的最后两行：在合成图和真实图(101 CT scans and annotations from LiTS)上训练U-Net 
+   - Figure 4(左): 在合成图和真实图(同样取自LiTS)上训练Swin UNETR的三个变种。虽然在真实图上训练的模型表现更好，但是该结果的p-value > 0.5, 两个模型的性能不存在statistical difference.
+   - Figure 4(右) (第一行：real data only from LiTS；第二行：healthy data collected from 3 different datasets): 在另外三个数据集上evaluate the models. 结果显示，使用了来自其他数据集的健康图像训练的模型表现出更好的robustness，并取得了更高的Speciﬁcity. 后者在医学上很重要(因为high Speciﬁcity -> fewer false positives).
+
+4. **Potential in Small Tumor Detection**
 ![Fig](../images/LabelFreeFig6.png "Small") 
-1. **Controllable Robustness Benchmark**
-![Fig](../images/LabelFreeFig7.png "Robustness") 
-医学成像的标准评估仅限于确定人工智能在检测肿瘤方面的有效性, 这是因为现有测试数据集中注释的肿瘤数量不够大，不能代表真实器官中发生的肿瘤，特别是只包含有限的非常小的肿瘤。合成肿瘤可以作为一个可获得的、全面的来源，严格评估人工智能在检测各种不同大小和位置的器官中的肿瘤的性能。
-1. **Ablation Study on Shape Generation**
+
+合成肿瘤的另一个优点是能够生成不同大小的肿瘤，用于训练和测试模型。真实数据集的缺点在于，由于大多数患者在早期阶段没有症状，包含小肿瘤的图像在真实数据集里不常见。因此，在真实数据集上训练出来的模型对小肿瘤的Sensitivity(52%)比大肿瘤的(91.6%)低. 
+
+Figure 5的上半部分是两个small tumor detection的例子，下半部份是两种模型(trained on real/synthetic)分别检测3种不同大小的肿瘤的结果。
+
+5. **Controllable Robustness Benchmark**
+![Fig](../images/LabelFreeFig7.png "Robustness")
+
+合成肿瘤还可以用来评估AI在检测各种不同大小、位置的器官中的肿瘤的性能。本文生成了在5个维度(location, size, shape, intensity, and texture)上不尽相同的肿瘤。通过这样全面的evaluation, 我们可以找到现有的AI模型的failure scenarios，然后在训练集中加入对应的worst-case tumors并微调算法。
+
+Figure 6是对3个已经训练好的模型的evaluation. $\mu$ 和 $\sigma$ 代表合成肿瘤使用的参数，表中数值(应该是)代表Sensitivity. 这些结果可以作为out-of-distribution (o.o.d.) benchmark.
+
+            分布外泛化（Out-of-Distribution Generalization，简称OOD泛化）旨在解决训练数据与测试数据分布不一致的问题，即模型需要基于有限观测数据学习出背后稳健的规律与关联性，从而泛化到未知数据分布。
+
+            (？表中第一列的i.i.d应该代表independent and identically distribution, 与ood对应)
+
+6. **Ablation Study on Shape Generation**
 ![Fig](../images/LabelFreeFig8.png "Ablation")  
+
+对肿瘤合成过程采用的三个策略，以及是否生成小肿瘤，进行了Ablation Study.

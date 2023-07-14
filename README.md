@@ -48,6 +48,7 @@ This Github repository is a collection of learning materials for beginners to le
 ### Deep Learning
 **No.** |**Name** |**Link** 
 :-: | :-: | :-
+0 |**基础概念** |[benchmark & baseline](https://www.zhihu.com/question/28823373)
 01 |**神经网络训练策略**|[自监督(self-supervise)](https://zhuanlan.zhihu.com/p/184995155); [弱监督(weak-supervise)](https://blog.csdn.net/weixin_43624538/article/details/106374306); [semi-supervise]
 02 |**神经网络解读** |[VGG](https://blog.csdn.net/qq_19329785/article/details/84504722#comments_15152607); [FCN](https://blog.csdn.net/qq_27825451/article/details/89355174); [SegNet](https://blog.csdn.net/qq_27825451/article/details/89451438); [U-Net](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/); [SPP-net](https://blog.csdn.net/yxq5997/article/details/53667394); [Deeplab](https://learnopencv.com/deeplabv3-ultimate-guide/#Going-From-DeepLabv3-To-DeepLabv3+); [Transformer](https://zhuanlan.zhihu.com/p/48508221), [Transformer技术综述](https://www.cvmart.net/community/detail/4032);[Swin Transformer](https://www.overleaf.com/project/6436bcbfc267571f622b3809)
 03 |**Attention Mechanism**|[轴注意力](https://www.jianshu.com/p/9b5c5a4d0bed); [注意力机制总结](https://www.cvmart.net/community/detail/4967); [软/硬注意力](https://fuxi.163.com/database/690)
