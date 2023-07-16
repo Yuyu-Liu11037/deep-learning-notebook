@@ -65,11 +65,13 @@ This Github repository is a collection of learning materials for beginners to le
 :-: | :-: | :- | :-
 :small_blue_diamond:2021 | arXiv | [RGB-D Salient Object Detection- A Survey](https://arxiv.org/abs/2008.00230) | RGB-D SOD综述
 2022 | IEEE TPAMI | [Domain Generalization: A Survey](https://arxiv.org/abs/2103.02503) | Domain Generalization综述
+2023 | arXiv | [A Survey on Semi-Supervised Semantic Segmentation](https://blog.csdn.net/CV_Autobot/article/details/129234235) | 半监督语义分割综述
 
 ### Others
 **Year** |**Pub.** |**Link** |**Contribution**
 :-: | :-: | :- | :-
 2020 | ECCV | [End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12872) | 提出了DETR: Transformer + 目标检测, End-to-end的网络架构，去除了Anchor机制、NMS后处理
+:small_blue_diamond:2021 | CVPR | [CPS: Semi-Supervised Semantic Segmentation with Cross Pseudo Supervision](https://zhuanlan.zhihu.com/p/378120529) | 提出了新的半监督语义分割算法
 :small_blue_diamond:2022 | AAAI | [Self-Supervised Pretraining for RGB-D Salient Object Detection](https://arxiv.org/abs/2101.12482) | RGB-D SOD: 把supervised pretraining换成self-supervised pretraining(提出了2个pretext tasks & 1个特征融合模块)
 :small_blue_diamond:2022 | ACCV | [Revisiting Image Pyramid Structure for High Resolution Salient Object Detection](https://arxiv.org/abs/2209.09475) | 在神经网络架构中使用特征金字塔，在低分辨率图像上训练，可以用作高分辨率图SOD
 :small_blue_diamond:2022 | MICCAI | [Scribble-Supervised Medical Image Segmentation via Dual-Branch Network and Dynamically Mixed Pseudo Labels Supervision](https://arxiv.org/abs/2203.02106) | 使用scribble supervised learning替代supervised learning, 用于医学图像分割
