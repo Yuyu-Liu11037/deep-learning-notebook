@@ -55,8 +55,9 @@ This Github repository is a collection of learning materials for beginners to le
 04 |**Image Pyramid (Traditional)**|[图像金字塔](https://zhuanlan.zhihu.com/p/112040797)
 04'|**Image Pyramid (Deep Learning)**|[LapSRN](https://blog.csdn.net/shwan_ma/article/details/78690974); [LRR](https://blog.csdn.net/Action_now_zj/article/details/110560758); [Use LRR in SOD](https://blog.csdn.net/qq_41684249/article/details/118194011)
 05 |**Semi-supervised Learning**|[Hard/Soft Label](https://ai.stackexchange.com/questions/9635/what-is-the-definition-of-soft-label-and-hard-label)
-06 |**Knowledge Distillation**|[知识蒸馏算法原理](https://developer.aliyun.com/article/1100635)
-07 |**Object Detection**|[R-CNN系列技术综述](https://zhuanlan.zhihu.com/p/51015050)
+06 |**Weakly-supervised Learning**|[]()
+07 |**Knowledge Distillation**|[知识蒸馏算法原理](https://developer.aliyun.com/article/1100635)
+08 |**Object Detection**|[R-CNN系列技术综述](https://zhuanlan.zhihu.com/p/51015050)
 
 
 ## 6. Paper 
