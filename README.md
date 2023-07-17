@@ -49,15 +49,14 @@ This Github repository is a collection of learning materials for beginners to le
 **No.** |**Name** |**Link** 
 :-: | :-: | :-
 0 |**基础概念** |[benchmark & baseline](https://www.zhihu.com/question/28823373)
-01 |**神经网络训练策略**|[自监督(self-supervise)](https://zhuanlan.zhihu.com/p/184995155); [弱监督(weak-supervise)](https://blog.csdn.net/weixin_43624538/article/details/106374306); [semi-supervise]
+01 |**神经网络训练策略**|[自监督(self-supervise)](https://zhuanlan.zhihu.com/p/184995155); [弱监督(weak-supervise)](https://blog.csdn.net/weixin_43624538/article/details/106374306); 
 02 |**神经网络解读** |[VGG](https://blog.csdn.net/qq_19329785/article/details/84504722#comments_15152607); [FCN](https://blog.csdn.net/qq_27825451/article/details/89355174); [SegNet](https://blog.csdn.net/qq_27825451/article/details/89451438); [U-Net](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/); [SPP-net](https://blog.csdn.net/yxq5997/article/details/53667394); [Deeplab](https://learnopencv.com/deeplabv3-ultimate-guide/#Going-From-DeepLabv3-To-DeepLabv3+); [Transformer](https://zhuanlan.zhihu.com/p/48508221), [Transformer技术综述](https://www.cvmart.net/community/detail/4032);[Swin Transformer](https://www.overleaf.com/project/6436bcbfc267571f622b3809)
-03 |**Attention Mechanism**|[轴注意力](https://www.jianshu.com/p/9b5c5a4d0bed); [注意力机制总结](https://www.cvmart.net/community/detail/4967); [软/硬注意力](https://fuxi.163.com/database/690)
+03 |**Attention Mechanism**|[轴注意力](https://www.jianshu.com/p/9b5c5a4d0bed); [注意力机制总结](https://www.cvmart.net/community/detail/4967), [KQV的理解](https://zhuanlan.zhihu.com/p/148737297?ivk_sa=1024320u); [软/硬注意力](https://fuxi.163.com/database/690)
 04 |**Image Pyramid (Traditional)**|[图像金字塔](https://zhuanlan.zhihu.com/p/112040797)
 04'|**Image Pyramid (Deep Learning)**|[LapSRN](https://blog.csdn.net/shwan_ma/article/details/78690974); [LRR](https://blog.csdn.net/Action_now_zj/article/details/110560758); [Use LRR in SOD](https://blog.csdn.net/qq_41684249/article/details/118194011)
 05 |**Semi-supervised Learning**|[Hard/Soft Label](https://ai.stackexchange.com/questions/9635/what-is-the-definition-of-soft-label-and-hard-label)
-06 |**Weakly-supervised Learning**|[]()
-07 |**Knowledge Distillation**|[知识蒸馏算法原理](https://developer.aliyun.com/article/1100635)
-08 |**Object Detection**|[R-CNN系列技术综述](https://zhuanlan.zhihu.com/p/51015050)
+06 |**Knowledge Distillation**|[知识蒸馏算法原理](https://developer.aliyun.com/article/1100635)
+07 |**Object Detection**|[R-CNN系列技术综述](https://zhuanlan.zhihu.com/p/51015050)
 
 
 ## 6. Paper 

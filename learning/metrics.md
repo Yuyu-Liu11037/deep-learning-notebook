@@ -4,6 +4,8 @@
 **No.**|**Name**|**Usage**
 :- |:- |:-
 01 | [Cross Entropy Loss](https://zhuanlan.zhihu.com/p/149186719) |
+02 | [Area Under the Curve (AUC)](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc) |评估二分类模型性能的一种常见指标
+03 | Pearson correlation coefficien | 衡量两个变量之间线性相关程度的统计量. Pearson相关系数的取值范围在-1到1之间, 当相关系数为1时，表示两个变量之间存在完全正向线性关系.
 
 ## Image Segmentation
 **No.**|**Name**|**Usage**
