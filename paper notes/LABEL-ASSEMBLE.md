@@ -19,7 +19,7 @@ Figure 1(B)介绍了作者具体如何整合多个数据集，并训练一个分
 
 如果输入的图像是有标签的，则在弱增强的这个分支中采用BCE loss; 如果图像是缺乏标签的，则在弱增强的这个分支上生成一个伪标签，并进行伪标签监督，同时与对应的强增强分支上的输出采用一致性损失 (consistency loss).
 
-总的loss function由这三个loss组成: $L_{total}=L_{bce}+L_{pseudo}+L_{consist}$.
+总的损失函数: $L_{total}=L_{bce}+L_{pseudo}+L_{consist}$.
 
 # Experiments
 Datasets: 

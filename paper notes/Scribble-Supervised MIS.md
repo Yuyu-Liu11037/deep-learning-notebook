@@ -15,12 +15,15 @@
 ![Overall Architecture](../images/Scribble-SupervisedMIS.jpg "Architecture")
 下面是对该网络的说明:
 - 一个共享的编码器和两个解码器. 这两个解码器区别在于输入的特征编码有没有加 dropout. 这样的设计类似于半监督学习里的consistency training / knowledge distillation, 作用是抑制 [inherent weakness of pseudolabel in the single branch network](https://zhuanlan.zhihu.com/p/604063439) (remembering itself predictions without updating).
-- 直接用涂鸦标签训练网络: partial cross-entropy loss (pCE)
+- 直接用涂鸦标签训练网络: 计算部分交叉熵损失(partial cross-entropy loss, pCE)
    $$L_{pCE}(y,s)=-\Sigma_{c}\Sigma_{i\in\omega_s}\log y_i^c$$
-   where $s$ represents the one-hot scribble annotations. $y_i^c$ is the predicted probability of pixel $i$ belonging class c. $\omega_s$ is the set of labeled pixels in s.
-- 通过伪标签训练网络：利用两个解码器的输出 $y_1,y_2$ 生成伪标签$PL$:
+   其中 $s$: 独热涂鸦标注(one-hot scribble annotations). $y_i^c$: 观测样本$i$ 属于类别 $c$ 的预测概率. $\omega_s$: $s$中有标注的像素.
+- 通过伪标签训练网络：利用两个解码器的输出 $y_1,y_2$ 生成伪标签 $PL$:
   $$PL=argmax[\alpha\times y_1 + (1.0-\alpha)\times y_2],\;\alpha=random(0,1)$$
-  其中 $\alpha$ 在每个epoch中随机取值。再利用伪标签去训练网络：$$L_{PLS}(PL, y_1, y_2)=0.5\times(L_{Dice}(PL, y_1)+L_{Dice}(PL,y_2))$$
+  其中 $\alpha$ 在每个epoch中随机取值。再计算伪标签损失 $L_{PLS}$：
+
+  $$L_{PLS}(PL, y_1, y_2)=0.5\times (L_{Dice}(PL, y_1)+L_{Dice}(PL,y_2))$$
+
   其中 $L_{Dice}\coloneqq$ dice loss.
 - 最后，总的损失函数为：
   $$L_{total}=0.5\times(L_{pCE}(y_1,s)+L_{pCE}(y_2,s)) + \lambda \times L_{PLS}(PL,y_1,y_2)$$
