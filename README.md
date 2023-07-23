@@ -80,6 +80,7 @@ This Github repository is a collection of learning materials for beginners to le
 :small_blue_diamond:2023 | MICCAI | [Instructive Feature Enhancement for Dichotomous Medical Image Segmentation](https://arxiv.org/abs/2306.03497) | 提出了用于DMIS的数据集，以及一个增强现有DMIS网络准确度的方法: 基于曲率/信息熵筛选特征并进行增强
 :small_blue_diamond:2023 | CVPR | [Label-Free Liver Tumor Segmentation](https://arxiv.org/abs/2303.14869)|from label-intensive to label-free AI development for tumor segmentation: 提出了一种自动将健康组织的CT扫描图转换成具有肿瘤的CT扫描图的方法. 该方法生成的图像数据集可以作为肿瘤检测的benchmark
 :small_blue_diamond:2023 | ISBI | [LABEL-ASSEMBLE: LEVERAGING MULTIPLE DATASETS WITH PARTIAL LABELS](https://arxiv.org/abs/2109.12265) | (hypothesis)具有多个标注类别的数据集能够比只具有interested标注类别的数据集更好地训练模型
+2023 | Preprint | [M2SNet: Multi-scale in Multi-scale Subtraction Network for Medical Image Segmentation](https://arxiv.org/abs/2303.10894) | 
 
 
 ## 7. Other Materials
