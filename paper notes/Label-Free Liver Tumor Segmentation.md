@@ -65,8 +65,6 @@
 1. **Comparison with State-of-the-art Methods**
 ![Fig](../images/LabelFreeFig4.png "SOTA comparison")
 
-<!-- QUESTION: 这几个方法各自是怎么work的?为什么要用它们进行比较? -->
-<!-- QUESTION: 这篇文章是怎么使用合成的图片进行unsupervised tumor segmentation？ -->
 这一部分将文章提出的label-free肿瘤合成策略与几个无监督肿瘤分割方法、另一个label-free合成策略、全监督方法进行比较。
 
 可以看到，其他方法最终训练出来的网络效果都不如使用了文章提出的合成策略来训练的网络。
