@@ -50,7 +50,7 @@ This Github repository is a collection of learning materials for beginners to le
 :-: | :-: | :-
 0 |**基础概念** |[benchmark & baseline](https://www.zhihu.com/question/28823373)
 01 |**神经网络训练策略**|[自监督(self-supervised)](https://zhuanlan.zhihu.com/p/184995155); [弱监督(weakly-supervised)](https://blog.csdn.net/weixin_43624538/article/details/106374306)
-02 |**神经网络** |[VGG](https://blog.csdn.net/qq_19329785/article/details/84504722#comments_15152607); [FCN](https://blog.csdn.net/qq_27825451/article/details/89355174); [SegNet](https://blog.csdn.net/qq_27825451/article/details/89451438); [SPP-net](https://blog.csdn.net/yxq5997/article/details/53667394); [Deeplab](https://learnopencv.com/deeplabv3-ultimate-guide/#Going-From-DeepLabv3-To-DeepLabv3+); [Transformer](https://zhuanlan.zhihu.com/p/48508221), [Transformer技术综述](https://www.cvmart.net/community/detail/4032);[Swin Transformer](https://www.overleaf.com/project/6436bcbfc267571f622b3809); [DenseNet](https://zhuanlan.zhihu.com/p/43057737)
+02 |**神经网络** |[VGG](https://blog.csdn.net/qq_19329785/article/details/84504722#comments_15152607); [FCN](https://blog.csdn.net/qq_27825451/article/details/89355174); [SegNet](https://blog.csdn.net/qq_27825451/article/details/89451438); [SPP-net](https://blog.csdn.net/yxq5997/article/details/53667394); [Deeplab系列](https://zhuanlan.zhihu.com/p/75333140); [Transformer](https://zhuanlan.zhihu.com/p/48508221), [Transformer技术综述](https://www.cvmart.net/community/detail/4032);[Swin Transformer](https://www.overleaf.com/project/6436bcbfc267571f622b3809); [DenseNet](https://zhuanlan.zhihu.com/p/43057737)
 02'|**医学图像分割网络**|[U-Net](https://lmb.informatik.uni-freiburg.de/people/ronneber/u-net/), [UNet++](https://0809zheng.github.io/2021/06/29/unetpp.html); [VNet](https://zhuanlan.zhihu.com/p/326161920)
 03 |**Attention Mechanism**|[轴注意力](https://www.jianshu.com/p/9b5c5a4d0bed); [注意力机制总结](https://www.cvmart.net/community/detail/4967), [KQV的理解](https://zhuanlan.zhihu.com/p/148737297?ivk_sa=1024320u); [软/硬注意力](https://fuxi.163.com/database/690)
 04 |**Image Pyramid (Traditional)**|[图像金字塔](https://zhuanlan.zhihu.com/p/112040797)
@@ -78,6 +78,7 @@ This Github repository is a collection of learning materials for beginners to le
 :small_blue_diamond:2022 | AAAI | [Self-Supervised Pretraining for RGB-D Salient Object Detection](https://arxiv.org/abs/2101.12482) | RGB-D SOD: 把supervised pretraining换成self-supervised pretraining(提出了2个pretext tasks & 1个特征融合模块)
 :small_blue_diamond:2022 | ACCV | [Revisiting Image Pyramid Structure for High Resolution Salient Object Detection](https://arxiv.org/abs/2209.09475) | 在神经网络架构中使用特征金字塔，在低分辨率图像上训练，可以用作高分辨率图SOD
 :small_blue_diamond:2022 | MICCAI | [Scribble-Supervised Medical Image Segmentation via Dual-Branch Network and Dynamically Mixed Pseudo Labels Supervision](https://arxiv.org/abs/2203.02106) | 使用scribble supervised learning替代supervised learning, 用于医学图像分割
+:small_blue_diamond:2022 | MICCAI | [Scribble2D5: Weakly-Supervised Volumetric Image Segmentation via Scribble Annotations](https://arxiv.org/abs/2205.06779)
 :small_blue_diamond:2023 | TCSVT | [HRTransNet: HRFormer-Driven Two-Modality Salient Object Detection](https://arxiv.org/abs/2301.03036)| 改进HRFormer, 使之可以接受双模态(RGB-D, RGB-T, and light field)的高分辨率图，进行SOD
 :small_blue_diamond:2023 | arXiv | [EHSNet: End-to-End Holistic Learning Network for Large-Size Remote Sensing Image Semantic Segmentation](https://arxiv.org/abs/2211.11316) | 提出用于大尺寸遥感图语义分割的end-to-end网络，其中包含长距离特征提取模块，并且该方法对内存有好
 :small_blue_diamond:2023 | MICCAI | [Instructive Feature Enhancement for Dichotomous Medical Image Segmentation](https://arxiv.org/abs/2306.03497) | 提出了用于DMIS的数据集，以及一个增强现有DMIS网络准确度的方法: 基于曲率/信息熵筛选特征并进行增强
@@ -93,6 +94,7 @@ This Github repository is a collection of learning materials for beginners to le
 01 |**Research Skills**|[CS290: Seminar on Effective Research Practices & Academic Culture](https://yanivyacoby.github.io/harvard-cs290/); [How to Read a Paper](https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf); [Learning Research](https://github.com/pengsida/learning_research)
 02 |**Programming Basics**|[Float Point Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)
 03 |**Paper Implementation**|[Annotated Implementation](https://github.com/labmlai/annotated_deep_learning_paper_implementations)
+04 |**Colab** |[clone github repo to gdrive](https://medium.com/@ashwindesilva/how-to-use-google-colaboratory-to-clone-a-github-repository-e07cf8d3d22b)
 
 ## 8. Problems
 **No.** |**Name** | **Solution**
