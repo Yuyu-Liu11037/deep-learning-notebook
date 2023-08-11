@@ -95,6 +95,7 @@ This Github repository is a collection of learning materials for beginners to le
 02 |**Programming Basics**|[Float Point Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)
 03 |**Paper Implementation**|[Annotated Implementation](https://github.com/labmlai/annotated_deep_learning_paper_implementations)
 04 |**Colab** |[clone github repo to gdrive](https://medium.com/@ashwindesilva/how-to-use-google-colaboratory-to-clone-a-github-repository-e07cf8d3d22b)
+05 |**调参技巧**|[深度学习调优指南](https://sourcecode.gitbook.io/ai/)
 
 ## 8. Problems
 **No.** |**Name** | **Solution**
