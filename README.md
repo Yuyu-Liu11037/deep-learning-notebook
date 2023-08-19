@@ -55,7 +55,7 @@ This Github repository is a collection of learning materials for beginners to le
 03 |**Attention Mechanism**|[轴注意力](https://www.jianshu.com/p/9b5c5a4d0bed); [注意力机制总结](https://www.cvmart.net/community/detail/4967), [KQV的理解](https://zhuanlan.zhihu.com/p/148737297?ivk_sa=1024320u); [软/硬注意力](https://fuxi.163.com/database/690)
 04 |**Image Pyramid (Traditional)**|[图像金字塔](https://zhuanlan.zhihu.com/p/112040797)
 04'|**Image Pyramid (Deep Learning)**|[LapSRN](https://blog.csdn.net/shwan_ma/article/details/78690974); [LRR](https://blog.csdn.net/Action_now_zj/article/details/110560758); [Use LRR in SOD](https://blog.csdn.net/qq_41684249/article/details/118194011)
-05 |**Semi-supervised Learning**|[Hard/Soft Label](https://ai.stackexchange.com/questions/9635/what-is-the-definition-of-soft-label-and-hard-label)
+05 |**Semi-supervised Learning**|[Hard/Soft Label](https://ai.stackexchange.com/questions/9635/what-is-the-definition-of-soft-label-and-hard-label); [半监督算法系列](https://zhen8838.github.io/2020/01/29/ssl-pseudo-label/)
 06 |**Knowledge Distillation**|[知识蒸馏算法原理](https://developer.aliyun.com/article/1100635)
 07 |**Object Detection**|[R-CNN系列技术综述](https://zhuanlan.zhihu.com/p/51015050)
 
