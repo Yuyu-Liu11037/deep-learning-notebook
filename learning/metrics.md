@@ -3,7 +3,7 @@
 ## General
 **No.**|**Name**|**Usage**
 :- |:- |:-
-01 | [Cross Entropy Loss (CE)](https://zhuanlan.zhihu.com/p/54066141) | 量化两个概率分布之间差异的损失函数（多用于分类问题）
+01 | [Cross Entropy Loss (CE)](https://zhuanlan.zhihu.com/p/98785902) | 量化两个概率分布之间差异的损失函数（多用于分类问题）
 01'| [Partial Cross Entropy Loss (pCE)](https://pengyizhang.github.io/2020/04/12/partial-CrossEntropy/) | 只在有标注的像素上计算CE
 02 | [Area Under the Curve (AUC)](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc) |评估二分类模型性能的一种常见指标
 02'| mean Area Under the Curve (mAUC) |衡量多类别分类模型性能的指标
