@@ -12,7 +12,7 @@
 
 ---
 # Details
-![Overall Architecture](../images/Scribble-SupervisedMIS.jpg "Architecture")
+![Overall Architecture](../../images/Scribble-SupervisedMIS.jpg "Architecture")
 下面是对该网络的说明:
 - 一个共享的编码器和两个解码器. 这两个解码器区别在于输入的特征编码有没有加 dropout. 这样的设计类似于半监督学习里的consistency training / knowledge distillation, 作用是抑制 [inherent weakness of pseudolabel in the single branch network](https://zhuanlan.zhihu.com/p/604063439) (remembering itself predictions without updating).
 - 直接用涂鸦标签训练网络: 计算部分交叉熵损失(partial cross-entropy loss, pCE)
@@ -39,18 +39,18 @@ Evaluation metrics:
 Backbone network: UNet
 
 ## Quantitative Analysis
-![Table1](../images/Scribble-SupervisedTable1.png "Result1")
+![Table1](../../images/Scribble-SupervisedTable1.png "Result1")
 "Mean" 代表 average results
 1. WSL: 与7个弱监督学习方法比较.
 2. SSL: 与4个半监督学习方法比较 (similar annotation budget).
 3. FSL: 与逐像素标注的全监督学习方法比较.
 
 ## Sensitivity Analysis of $\lambda$
-![Figure](../images/Scribble-SupervisedFig.png "Analysis")
+![Figure](../../images/Scribble-SupervisedFig.png "Analysis")
 分析不同权重的伪标签损失的作用。
 
 ## Ablation Study
-![Figure](../images/Scribble-SupervisedTable2.png "Analysis")
+![Figure](../../images/Scribble-SupervisedTable2.png "Analysis")
 探究使用不同监督策略对网络表现的影响：
 1. Consistency Regularization (CR) 
 2. Cross Pseudo Supervision (CPS) 

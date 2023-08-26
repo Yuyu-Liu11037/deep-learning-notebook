@@ -6,7 +6,7 @@
 因此，作者发布了第一个基于涂鸦标注的COD数据集(S-COD)。同时，由于已有的弱监督COD网络应用在涂鸦标注数据上时，都无法准确识别边界和语义联系，作者提出了第一个基于涂鸦标注的端到端COD网络。
 
 # Details
-![pic](../images/COD1.png "Model")
+![pic](../../images/COD1.png "Model")
 ## Network Structures
 ### Local-Context Contrasted (LCC) Module
 为了利用低层级信息 (e.g., 纹理、颜色、强度) 把伪装物体和背景区分开，作者设计了可以捕获并加强低层级差异的模块 LCC。
