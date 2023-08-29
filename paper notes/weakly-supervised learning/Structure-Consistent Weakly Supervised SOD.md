@@ -32,6 +32,7 @@ $$L_{lsc}=\sum_i\sum_{j\in K_i}F(i,j)D(i,j)$$
 ![pic](../../images/StructureConsis5.png "Self-consistent")
 
 ## Objective Function
+<!-- 这里的ce就是partial cross entropy loss -->
 $$L_{total}=L_{dom}+\sum_{q=1}^3\lambda_q L_{aux}^q,\quad q\in\{1,2,3\}$$
 $$L_{dom}=L_{ce}+L_{ssc}+\beta L_{lsc}$$
 $$L_{aux}^q=L_{ce}+\beta L_{lsc}$$

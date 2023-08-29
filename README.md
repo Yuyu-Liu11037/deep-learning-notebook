@@ -2,12 +2,12 @@
 This Github repository is a collection of learning materials for beginners to learn machine learning, including links and introductions to relevant books, tutorials, practical projects, and commonly used tools.
 
 
-## 2. Turorial
+## 1. Turorial
 **No.** |**Name** |**Link** 
 :-: | :-: | :- 
 01|**PyTorch**|[深入浅出PyTorch](https://github.com/datawhalechina/thorough-pytorch); [深度学习与PyTorch入门实战](https://github.com/dragen1860/Deep-Learning-with-PyTorch-Tutorials)|
 
-## 3. Course
+## 2. Course
 **No.** |**Name** |**Link** 
 :-: | :-: | :- 
 01 |**Machine Learning**|[CS229: Machine Learning](https://cs229.stanford.edu/) & [Course Materials](https://github.com/maxim5/cs229-2018-autumn)
@@ -15,17 +15,18 @@ This Github repository is a collection of learning materials for beginners to le
 03 |**CNN**|[CS231n: Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/)
 04 |**Deep Learning**|[DS-GA 1008](https://atcold.github.io/pytorch-Deep-Learning/); [动手学深度学习](https://github.com/d2l-ai/d2l-zh)
 
-## 4. Book
+## 3. Book
 **No.** |**Name** |**Link** 
 :-: | :-: | :- 
 01 |**Deep Learning**|[deep learning](https://www.deeplearningbook.org/) & [深度学习_原理与代码实现](https://github.com/MingchaoZhu/DeepLearning); [Practical deep learning](https://course.fast.ai/); [动手学深度学习](https://github.com/d2l-ai/d2l-zh)
 02 |**Machine Learning**|[统计学习方法](https://github.com/SmirkCao/Lihang)
 
-## 5. Code Resources
+## 4. Code Resources
 **No.** |**Name** |**Link** | **Secondary Link**
 :-: | :-: | :-: | :-
 01 |**Code Implementation**|[CNN](https://blog.paperspace.com/writing-cnns-from-scratch-in-pytorch/) | [torch.torchvision.Resize()](https://www.tutorialspoint.com/pytorch-how-to-resize-an-image-to-a-given-size)
 02 |**Pytorch implementation**|[Semantic Segmentation Networks](https://github.com/yassouali/pytorch-segmentation#models)
+03 |**语义分割**|[nn.CrossEntropyLoss用于语义分割](https://blog.csdn.net/Fcc_bd_stars/article/details/105158215)
 
 ## 5. Other Resources
 ### Machine Learning
