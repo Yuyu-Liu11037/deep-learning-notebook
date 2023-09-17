@@ -13,7 +13,7 @@ This Github repository is a collection of learning materials for beginners to le
 01 |**Machine Learning**|[CS229: Machine Learning](https://cs229.stanford.edu/) & [Course Materials](https://github.com/maxim5/cs229-2018-autumn)
 02 |**Computer Vision**|[CS131: Computer Vision: Foundations and Applications](http://vision.stanford.edu/teaching/cs131_fall1617/index.html)
 03 |**CNN**|[CS231n: Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/)
-04 |**Deep Learning**|[DS-GA 1008](https://atcold.github.io/pytorch-Deep-Learning/); [动手学深度学习](https://github.com/d2l-ai/d2l-zh)
+04 |**Deep Learning**|[DS-GA 1008](https://atcold.github.io/pytorch-Deep-Learning/); [动手学深度学习](https://github.com/d2l-ai/d2l-zh) | [MIT: Intro to Deep Learning](http://introtodeeplearning.com/)
 
 ## 3. Book
 **No.** |**Name** |**Link** 
@@ -78,12 +78,13 @@ This Github repository is a collection of learning materials for beginners to le
 :small_blue_diamond:2023 | arXiv | [EHSNet: End-to-End Holistic Learning Network for Large-Size Remote Sensing Image Semantic Segmentation](https://arxiv.org/abs/2211.11316) | 提出用于大尺寸遥感图语义分割的end-to-end网络，其中包含长距离特征提取模块，并且该方法对内存有好
 :small_blue_diamond:2023 | MICCAI | [Instructive Feature Enhancement for Dichotomous Medical Image Segmentation](https://arxiv.org/abs/2306.03497) | 提出了用于DMIS的数据集，以及一个增强现有DMIS网络准确度的方法: 基于曲率/信息熵筛选特征并进行增强
 :small_blue_diamond:2023 | CVPR | [Label-Free Liver Tumor Segmentation](https://arxiv.org/abs/2303.14869)|from label-intensive to label-free AI development for tumor segmentation: 提出了一种自动将健康组织的CT扫描图转换成具有肿瘤的CT扫描图的方法. 该方法生成的图像数据集可以作为肿瘤检测的benchmark
+:small_blue_diamond:2023 | CVPR | [MCF: Mutual Correction Framework for Semi-Supervised Medical Image Segmentation](https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_MCF_Mutual_Correction_Framework_for_Semi-Supervised_Medical_Image_Segmentation_CVPR_2023_paper.pdf) | 双流网络做半监督，labeled data的差异区域额外使用MSE loss, unlabled data使用类似co-training的方法
 :small_blue_diamond:2023 | ISBI | [LABEL-ASSEMBLE: LEVERAGING MULTIPLE DATASETS WITH PARTIAL LABELS](https://arxiv.org/abs/2109.12265) | (hypothesis)具有多个标注类别的数据集能够比只具有interested标注类别的数据集更好地训练模型
 :small_blue_diamond:2023 | Preprint | [M2SNet: Multi-scale in Multi-scale Subtraction Network for Medical Image Segmentation](https://arxiv.org/abs/2303.10894) | M2SNet: 带多层减法聚合模块的改进版UNet
 :small_blue_diamond:2023 | AAAI | [Weakly-Supervised Camouﬂaged Object Detection with Scribble Annotations](https://arxiv.org/abs/2207.14083) 
 :small_blue_diamond:2023 | MIA | [Ambiguity-selective consistency regularization for mean-teacher semi-supervised medical image segmentation](https://www.sciencedirect.com/science/article/pii/S1361841523001408) | 提出了一类target selection的策略来改进MT模型
-:small_blue_diamond:2023 | IEEE Trans on Medical Imaging | [Anti-Interference From Noisy Labels: MeanTeacher-Assisted Conﬁdent Learning for Medical Image Segmentation](https://arxiv.org/abs/2106.01860) | 使用置信学习(confident learning)的方法改善MT架构中teacher的预测质量
-
+:small_blue_diamond:2023 | TMI | [Anti-Interference From Noisy Labels: MeanTeacher-Assisted Conﬁdent Learning for Medical Image Segmentation](https://arxiv.org/abs/2106.01860) | 使用置信学习(confident learning)的方法改善MT架构中teacher的预测质量
+:small_blue_diamond:2023 | TPAMI | [Uncertainty-aware Dual-evidential Learning for Weakly-supervised Temporal Action Localization](https://ieeexplore.ieee.org/abstract/document/10230884/) | 
 
 ## 7. Other Materials
 **No.** |**Name** |**Link** 

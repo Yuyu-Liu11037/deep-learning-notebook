@@ -12,7 +12,7 @@
 
 2. 噪声标签去噪后监督student model
     1. Characterize the pixel-wise label errors via adapted CL: 先用teacher的预测(概率值)和该图像对应的标签计算一个混淆矩阵(confusion matrix), 进一步计算噪声标签和(潜在的)真实标签之间的联合概率矩阵。然后在每个类别里选择置信度低的像素，把它们当作错误标签，得到噪声分布图(noisy map)
-    2. Smoothly reﬁne the noisy labels of Set-LQ to provide rewarding supervisio: 对噪声分布图上的标签不完全地取反
+    2. Smoothly reﬁne the noisy labels of Set-LQ to provide rewarding supervision: 对噪声分布图上的标签不完全地取反
     3. Self-loop updating: 每个epoch里，把噪声标签替换成修正后的标签，用作下一个epoch的训练过程
 
 
