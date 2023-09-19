@@ -3,12 +3,12 @@ This Github repository is a collection of learning materials for beginners to le
 
 
 ## 1. Turorial
-**Name** |**Link** 
+**No.**|**Name** |**Link** 
 :-: | :-: | :- 
 01|**PyTorch**|[深入浅出PyTorch](https://github.com/datawhalechina/thorough-pytorch); [深度学习与PyTorch入门实战](https://github.com/dragen1860/Deep-Learning-with-PyTorch-Tutorials)|
 
 ## 2. Course
-**Name** |**Link** 
+**No.**|**Name** |**Link** 
 :-: | :-: | :- 
 01 |**Machine Learning**|[CS229: Machine Learning](https://cs229.stanford.edu/) & [Course Materials](https://github.com/maxim5/cs229-2018-autumn)
 02 |**Computer Vision**|[CS131: Computer Vision: Foundations and Applications](http://vision.stanford.edu/teaching/cs131_fall1617/index.html)
@@ -16,13 +16,13 @@ This Github repository is a collection of learning materials for beginners to le
 04 |**Deep Learning**|[DS-GA 1008](https://atcold.github.io/pytorch-Deep-Learning/); [动手学深度学习](https://github.com/d2l-ai/d2l-zh) | [MIT: Intro to Deep Learning](http://introtodeeplearning.com/)
 
 ## 3. Book
-**Name** |**Link** 
+**No.**|**Name** |**Link** 
 :-: | :-: | :- 
 01 |**Deep Learning**|[deep learning](https://www.deeplearningbook.org/) & [深度学习_原理与代码实现](https://github.com/MingchaoZhu/DeepLearning); [Practical deep learning](https://course.fast.ai/); [动手学深度学习](https://github.com/d2l-ai/d2l-zh)
 02 |**Machine Learning**|[统计学习方法](https://github.com/SmirkCao/Lihang)
 
 ## 4. Code Resources
-**Name** |**Link** | **Secondary Link**
+**No.**|**Name** |**Link** | **Secondary Link**
 :-: | :-: | :-: | :-
 01 |**Code Implementation**|[CNN](https://blog.paperspace.com/writing-cnns-from-scratch-in-pytorch/) | [torch.torchvision.Resize()](https://www.tutorialspoint.com/pytorch-how-to-resize-an-image-to-a-given-size)
 02 |**Pytorch implementation**|[Semantic Segmentation Networks](https://github.com/yassouali/pytorch-segmentation#models)
@@ -30,13 +30,13 @@ This Github repository is a collection of learning materials for beginners to le
 
 ## 5. Other Resources
 ### Machine Learning
-**Name** |**Link** 
+**No.**|**Name** |**Link** 
 :-: | :-: | :-
 01 |**机器学习原理**|[机器学习笔记整理](https://github.com/shunliz/Machine-Learning)
 02 |**Domain Generalization**|[域泛化相关知识学习](https://blog.csdn.net/DUDUDUTU/article/details/130782169); [Survey](https://arxiv.org/abs/2103.02503)
 
 ### Deep Learning
-**Name** |**Link** 
+**No.**|**Name** |**Link** 
 :-: | :-: | :-
 0 |**基础概念** |[benchmark & baseline](https://www.zhihu.com/question/28823373)
 01 |**神经网络训练策略**|[自监督(self-supervised)](https://zhuanlan.zhihu.com/p/184995155); [弱监督(weakly-supervised)](https://blog.csdn.net/weixin_43624538/article/details/106374306)
