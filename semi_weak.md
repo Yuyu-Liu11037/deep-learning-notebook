@@ -1,5 +1,5 @@
 # 半监督/弱监督论文整理
-- 任务类别: 语义分割、视频理解、图像分类、目标检测
+- 任务类别: 语义分割、实例分割、视频理解、图像分类、目标检测、目标定位、域自适应
 - 会议/期刊:
   - CVPR: 2023, 2022, 2021 
   - ICCV: 2023, 2021
@@ -36,7 +36,7 @@ CVPR | [Anti-curriculum Pseudo-labelling for Semi-supervised Medical Image Class
 MICCAI | [ACT: Semi-supervised Domain-adaptive Medical Image Segmentation with Asymmetric Co-Training](https://link.springer.com/chapter/10.1007/978-3-031-16443-9_7) | 
 MICCAI | [Addressing Class Imbalance in Semi-supervised Image Segmentation: A Study on Cardiac MRI]() | 
 MICCAI | [Bayesian Pseudo Labels: Expectation Maximization for Robust and Efficient Semi-Supervised Segmentation]() | 
-MICCAI [Censor-aware Semi-supervised Learning for Survival Time Prediction from Medical Images]() | 
+MICCAI | [Censor-aware Semi-supervised Learning for Survival Time Prediction from Medical Images]() | 
 MICCAI | [Clinical-realistic Annotation for Histopathology Images with Probabilistic Semi-supervision: A Worst-case Study]() | 
 MICCAI | [Consistency-based Semi-supervised Evidential Active Learning for Diagnostic Radiograph Classification]() | 
 MICCAI | [Dynamic Bank Learning for Semi-supervised Federated Image Diagnosis with Class Imbalance]() | 
@@ -216,11 +216,11 @@ CVPR | [DCNAS: Densely Connected Neural Architecture Search for Semantic Image S
 2022 | MICCAI | [Efficient Bayesian Uncertainty Estimation for nnU-Net]() | Uncertainty
 2022 | MICCAI | [Estimating Model Performance under Domain Shifts with Class-Specific Confidence Scores]() | 
 2022 | MICCAI | [On the Uncertain Single-View Depths in Colonoscopies]() | 
-2022 | [A Comprehensive Study of Modern Architectures and Regularization Approaches on CheXpert5000]()
+2022 | MICCAI | [A Comprehensive Study of Modern Architectures and Regularization Approaches on CheXpert5000]()
 2021 | CVPR | [Uncertainty Reduction for Model Adaptation in Semantic Segmentation](https://openaccess.thecvf.com/content/CVPR2021/html/S_Uncertainty_Reduction_for_Model_Adaptation_in_Semantic_Segmentation_CVPR_2021_paper.html) | 域自适应语义分割
 2021 | CVPR | [Prototypical Pseudo Label Denoising and Target Structure Learning for Domain Adaptive Semantic Segmentation](https://arxiv.org/abs/2101.10979) | 域自适应语义分割
 2021 | CVPR | [Uncertainty-aware Joint Salient Object and Camouflaged Object Detection](https://arxiv.org/abs/2104.02628) | 显著性检测 / 伪装目标检测
 2021 | ICCV | [Self-Supervised Vessel Segmentation via Adversarial Learning](https://github.com/AISIGSJTU/SSVS) | 
-2021 | ICCV [Uncertainty-Aware Pseudo Label Refinery for Domain Adaptive Semantic Segmentation](https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_Uncertainty-Aware_Pseudo_Label_Refinery_for_Domain_Adaptive_Semantic_Segmentation_ICCV_2021_paper.pdf) | 
+2021 | ICCV | [Uncertainty-Aware Pseudo Label Refinery for Domain Adaptive Semantic Segmentation](https://openaccess.thecvf.com/content/ICCV2021/papers/Wang_Uncertainty-Aware_Pseudo_Label_Refinery_for_Domain_Adaptive_Semantic_Segmentation_ICCV_2021_paper.pdf) | 
 2021 | ICCV | [Learning with Noisy Labels via Sparse Regularization](https://arxiv.org/abs/2108.00192)
 
