@@ -50,44 +50,33 @@ This Github repository is a collection of learning materials for beginners to le
 07 |**Object Detection**|[R-CNN系列技术综述](https://zhuanlan.zhihu.com/p/51015050)
 08 |**Few-shot Learning**|[Few-shot Semantic Segmentation](https://github.com/xiaomengyc/Few-Shot-Semantic-Segmentation-Papers)
 09 |**卷积模块**|[DenseASPP](https://blog.csdn.net/u011974639/article/details/80844304)
-
+10 |**Long-tail Learning**|[半监督学习+长尾分布](https://zhuanlan.zhihu.com/p/259710601)
+11 |**Co-training**|[协同训练&类协同训练](https://blog.csdn.net/by6671715/article/details/123739264)
 
 ## 6. Paper 
+[Papers for semi/weakly supervised learning](semi_weak.md)
 ### Survey
 **Year** |**Pub.** |**Link** |**Contribution**
 :-: | :-: | :- | :-
 :small_blue_diamond:2021 | arXiv | [RGB-D Salient Object Detection- A Survey](https://arxiv.org/abs/2008.00230) | RGB-D SOD综述
 2022 | IEEE TPAMI | [Domain Generalization: A Survey](https://arxiv.org/abs/2103.02503) | Domain Generalization综述
-2022 | IET | [Medical image segmentation using deep learning: A survey](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12419) | 医学图像分割综述
-2023 | arXiv | [A Survey on Semi-Supervised Semantic Segmentation](https://blog.csdn.net/CV_Autobot/article/details/129234235) | 半监督语义分割综述
 
 ### Others
 **Year** |**Pub.** |**Link** |**Contribution**
 :-: | :-: | :- | :-
 2017 | NIPS | [Mean teachers are better role models: Weight-averaged consistency targets improve semi-supervised deep learning results](https://arxiv.org/abs/1703.01780) | 提出mean teacher(MT)架构, 将 $\Pi$-model中对预测的EMA改成模型参数的EMA, 在每个step之后更新
 2020 | ECCV | [End-to-End Object Detection with Transformers](https://arxiv.org/abs/2005.12872) | 提出了DETR: Transformer + 目标检测, End-to-end的网络架构，去除了Anchor机制、NMS后处理
-:small_blue_diamond:2021 | CVPR | [CPS: Semi-Supervised Semantic Segmentation with Cross Pseudo Supervision](https://zhuanlan.zhihu.com/p/378120529) | 提出了新的半监督语义分割算法
-:small_blue_diamond:2021 | AAAI | [Structure-Consistent Weakly Supervised Salient Object Detection with Local Saliency Coherence](https://arxiv.org/abs/2012.04404) | 弱监督(涂鸦标签)SOD网络
-:small_blue_diamond:2021 | MICCAI | [Noisy Labels are Treasure: Mean-Teacher-assisted Confident Learning for Hepatic Vessel Segmentation](https://arxiv.org/abs/2106.01860) | 利用定点学习技术改进加权平均MT模型，更好地利用低质量数据
 :small_blue_diamond:2022 | AAAI | [Self-Supervised Pretraining for RGB-D Salient Object Detection](https://arxiv.org/abs/2101.12482) | RGB-D SOD: 把supervised pretraining换成self-supervised pretraining(提出了2个pretext tasks & 1个特征融合模块)
 :small_blue_diamond:2022 | ACCV | [Revisiting Image Pyramid Structure for High Resolution Salient Object Detection](https://arxiv.org/abs/2209.09475) | 在神经网络架构中使用特征金字塔，在低分辨率图像上训练，可以用作高分辨率图SOD
-:small_blue_diamond:2022 | MICCAI | [Scribble-Supervised Medical Image Segmentation via Dual-Branch Network and Dynamically Mixed Pseudo Labels Supervision](https://arxiv.org/abs/2203.02106) | 使用scribble supervised learning替代supervised learning, 用于医学图像分割
-:small_blue_diamond:2022 | MICCAI | [Scribble2D5: Weakly-Supervised Volumetric Image Segmentation via Scribble Annotations](https://arxiv.org/abs/2205.06779) | 3D涂鸦监督网络
-:small_blue_diamond:2022 | JBHI |[All-Around Real Label Supervision: Cyclic Prototype Consistency Learning for Semi-supervised Medical Image Segmentation](https://arxiv.org/abs/2109.13930) | 为半监督训练提出了以真实标签为中心的循环原型一致性学习（CPCL）框架
 :small_blue_diamond:2023 | TCSVT | [HRTransNet: HRFormer-Driven Two-Modality Salient Object Detection](https://arxiv.org/abs/2301.03036)| 改进HRFormer, 使之可以接受双模态(RGB-D, RGB-T, and light field)的高分辨率图，进行SOD
 :small_blue_diamond:2023 | arXiv | [EHSNet: End-to-End Holistic Learning Network for Large-Size Remote Sensing Image Semantic Segmentation](https://arxiv.org/abs/2211.11316) | 提出用于大尺寸遥感图语义分割的end-to-end网络，其中包含长距离特征提取模块，并且该方法对内存有好
 :small_blue_diamond:2023 | MICCAI | [Instructive Feature Enhancement for Dichotomous Medical Image Segmentation](https://arxiv.org/abs/2306.03497) | 提出了用于DMIS的数据集，以及一个增强现有DMIS网络准确度的方法: 基于曲率/信息熵筛选特征并进行增强
 :small_blue_diamond:2023 | CVPR | [Label-Free Liver Tumor Segmentation](https://arxiv.org/abs/2303.14869)|from label-intensive to label-free AI development for tumor segmentation: 提出了一种自动将健康组织的CT扫描图转换成具有肿瘤的CT扫描图的方法. 该方法生成的图像数据集可以作为肿瘤检测的benchmark
-:small_blue_diamond:2023 | CVPR | [MCF: Mutual Correction Framework for Semi-Supervised Medical Image Segmentation](https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_MCF_Mutual_Correction_Framework_for_Semi-Supervised_Medical_Image_Segmentation_CVPR_2023_paper.pdf) | 双流网络做半监督，labeled data的差异区域额外使用MSE loss, unlabled data使用类似co-training的方法
 :small_blue_diamond:2023 | ISBI | [LABEL-ASSEMBLE: LEVERAGING MULTIPLE DATASETS WITH PARTIAL LABELS](https://arxiv.org/abs/2109.12265) | (hypothesis)具有多个标注类别的数据集能够比只具有interested标注类别的数据集更好地训练模型
 :small_blue_diamond:2023 | Preprint | [M2SNet: Multi-scale in Multi-scale Subtraction Network for Medical Image Segmentation](https://arxiv.org/abs/2303.10894) | M2SNet: 带多层减法聚合模块的改进版UNet
-:small_blue_diamond:2023 | AAAI | [Weakly-Supervised Camouﬂaged Object Detection with Scribble Annotations](https://arxiv.org/abs/2207.14083) 
-:small_blue_diamond:2023 | MIA | [Ambiguity-selective consistency regularization for mean-teacher semi-supervised medical image segmentation](https://www.sciencedirect.com/science/article/pii/S1361841523001408) | 提出了一类target selection的策略来改进MT模型
-:small_blue_diamond:2023 | TMI | [Anti-Interference From Noisy Labels: MeanTeacher-Assisted Conﬁdent Learning for Medical Image Segmentation](https://arxiv.org/abs/2106.01860) | 使用置信学习(confident learning)的方法改善MT架构中teacher的预测质量
-:small_blue_diamond:2023 | TPAMI | [Uncertainty-aware Dual-evidential Learning for Weakly-supervised Temporal Action Localization](https://ieeexplore.ieee.org/abstract/document/10230884/) | 
 
 ## 7. Other Materials
-**Name** |**Link** 
+**No.**|**Name** |**Link** 
 :-: | :-: | :- 
 01 |**Research Skills**|[CS290: Seminar on Effective Research Practices & Academic Culture](https://yanivyacoby.github.io/harvard-cs290/); [How to Read a Paper](https://web.stanford.edu/class/ee384m/Handouts/HowtoReadPaper.pdf); [Learning Research](https://github.com/pengsida/learning_research)
 02 |**Programming Basics**|[Float Point Arithmetic](https://docs.oracle.com/cd/E19957-01/806-3568/ncg_goldberg.html)

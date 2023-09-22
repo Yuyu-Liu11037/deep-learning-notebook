@@ -1,5 +1,5 @@
 # 半监督/弱监督论文整理
-- 任务类别: 语义分割、实例分割、视频理解、图像分类、目标检测、目标定位、域适应
+- 任务类别: 语义分割、实例分割、视频理解、图像分类、目标检测、目标定位、域适应、度量学习、人群计数
 - 近3年会议/期刊:
   - CVPR: 2023, 2022, 2021 
   - ICCV: 2023, 2021
@@ -19,55 +19,55 @@
 ### 2023
 **Pub.** |**Link** | **Brief Intro**
 :-: | :-: | :-
-MIA | [Ambiguity-selective consistency regularization for mean-teacher semi-supervised medical image segmentation](https://www.sciencedirect.com/science/article/pii/S1361841523001408) | 提出了一类target selection的策略来改进MT模型
-TMI | [Anti-Interference From Noisy Labels: MeanTeacher-Assisted Conﬁdent Learning for Medical Image Segmentation](https://arxiv.org/abs/2106.01860) | 使用置信学习(confident learning)的方法改善MT架构中teacher的预测质量
-CVPR | [MCF: Mutual Correction Framework for Semi-Supervised Medical Image Segmentation](https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_MCF_Mutual_Correction_Framework_for_Semi-Supervised_Medical_Image_Segmentation_CVPR_2023_paper.pdf) | 双流网络做半监督，labeled data的差异区域额外使用MSE loss, unlabled data使用类似co-training的方法
-CVPR | [Pseudo-label Guided Contrastive Learning for Semi-supervised Medical Image Segmentation](https://paperswithcode.com/paper/pseudo-label-guided-contrastive-learning-for) | 
-CVPR | [MagicNet: Semi-Supervised Multi-Organ Segmentation via Magic-Cube Partition and Recovery](https://arxiv.org/abs/2212.14310)
-CVPR | [Bidirectional Copy-Paste for Semi-Supervised Medical Image Segmentation](https://arxiv.org/abs/2305.00673)
-CVPR | [Hierarchical Supervision and Shuffle Data Augmentation for 3D Semi-Supervised Object Detection]()
-CVPR | [Semi-Weakly Supervised Object Kinematic Motion Prediction]()
-CVPR | [Semi-Supervised Stereo-based 3D Object Detection via Cross-View Consensus]()
-CVPR | [Exploring Intra-Class Variation Factors with Learnable Cluster Prompts for Semi-Supervised Image Synthesis]()
-CVPR | [Semi-Supervised Hand Appearance Recovery via Structure Disentanglement and Dual Adversarial Discrimination]()
-CVPR | [Semi-Supervised 2D Human Pose Estimation Driven by Position Inconsistency Pseudo Label Correction Module]()
-CVPR | *[ProtoCon: Pseudo-Label Refinement via Online Clustering and Prototypical Consistency for Efficient Semi-Supervised Learning]()
-CVPR | [Semi-Supervised Domain Adaptation with Source Label Adaptation]()
-CVPR | [Towards Realistic Long-Tailed Semi-Supervised Learning: Consistency Is All You Need]()
-CVPR | [Semi-Supervised Learning Made Simple with Self-Supervised Clustering]()
-CVPR | [Semi-DETR: Semi-Supervised Object Detection with Detection Transformers]()
-CVPR | [Ambiguity-Resistant Semi-Supervised Learning for Dense Object Detection]()
-CVPR | [MixTeacher: Mining Promising Labels with Mixed Scale Teacher for Semi-Supervised Object Detection]()
-CVPR | [SOOD: Towards Semi-Supervised Oriented Object Detection]()
-CVPR | [Out-of-Distributed Semantic Pruning for Robust Semi-Supervised Learning]()
-CVPR | [Deep Semi-Supervised Metric Learning with Mixed Label Propagation]()
-CVPR | [RefTeacher: A Strong Baseline for Semi-Supervised Referring Expression Comprehension]()
-CVPR | [Semi-Supervised Parametric Real-World Image Harmonization]()
-CVPR | [Contrastive Semi-Supervised Learning for Underwater Image Restoration via Reliable Bank]()
-CVPR | [The Devil is in the Points: Weakly Semi-Supervised Instance Segmentation via Point-guided Mask Representation]()
-CVPR | [Simultaneously Short- and Long-Term Temporal Modeling for Semi-Supervised Video Semantic Segmentation]()
-CVPR | [Fuzzy Positive Learning for Semi-Supervised Semantic Segmentation]()
-CVPR | [Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation]()
-CVPR | [SemiCVT: Semi-Supervised Convolutional Vision Transformer for Semantic Segmentation]()
-CVPR | [Hunting Sparsity: Density-guided Contrastive Learning for Semi-Supervised Semantic Segmentation]()
-CVPR | [Conflict-based Cross-View Consistency for Semi-Supervised Semantic Segmentation]()
-CVPR | [Augmentation Matters: A Simple-yet-Effective Approach to Semi-Supervised Semantic Segmentation]()
-CVPR | [Instance-Specific and Model-Adaptive Supervision for Semi-Supervised Semantic Segmentation]()
-CVPR | [Boosting Semi-Supervised Learning by Exploiting All Unlabeled Data]()
-CVPR | [HyperMatch: Noise-Tolerant Semi-Supervised Learning via Relaxed Contrastive Constraint]()
-CVPR | [MarginMatch: Improving Semi-Supervised Learning with Pseudo-Margins]()
-CVPR | [Decoupled Semantic Prototypes Enable Learning from Diverse Annotation Types for Semi-Weakly Segmentation in Expert-Driven Domains	]()
-CVPR | [DualRel: Semi-Supervised Mitochondria Segmentation from a Prototype Perspective			]()
-CVPR | [PEFAT: Boosting Semi-Supervised Medical Image Classification via Pseudo-Loss Estimation and Feature Adversarial Training]()
-CVPR | [TimeBalance: Temporally-Invariant and Temporally-Distinctive Video Representations for Semi-Supervised Action Recognition]()
-CVPR | [SVFormer: Semi-Supervised Video Transformer for Action Recognition]()
-CVPR | [LaserMix for Semi-Supervised LiDAR Semantic Segmentation]()
-CVPR | [CHMATCH: Contrastive Hierarchical Matching and Robust Adaptive Threshold Boosted Semi-Supervised Learning]()
-CVPR | [A New Comprehensive Benchmark for Semi-Supervised Video Anomaly Detection and Anticipation]()
-CVPR | [Optimal Transport Minimization: Crowd Localization on Density Maps for Semi-Supervised Counting]()
-CVPR | [Semi-Supervised Video Inpainting with Cycle Consistency Constraints]()
-CVPR | [Class Balanced Adaptive Pseudo Labeling for Federated Semi-Supervised Learning]()
-CVPR | [Consistent-Teacher: Towards Reducing Inconsistent Pseudo-Targets in Semi-Supervised Object Detection]()
+MIA | *[Ambiguity-selective consistency regularization for mean-teacher semi-supervised medical image segmentation](https://www.sciencedirect.com/science/article/pii/S1361841523001408) | 提出了一类target selection的策略来改进MT模型
+TMI | *[Anti-Interference From Noisy Labels: MeanTeacher-Assisted Conﬁdent Learning for Medical Image Segmentation](https://arxiv.org/abs/2106.01860) | 使用置信学习(confident learning)的方法改善MT架构中teacher的预测质量
+CVPR | *[MCF: Mutual Correction Framework for Semi-Supervised Medical Image Segmentation](https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_MCF_Mutual_Correction_Framework_for_Semi-Supervised_Medical_Image_Segmentation_CVPR_2023_paper.pdf) | 双流网络做半监督，labeled data的差异区域额外使用MSE loss, unlabled data使用类似co-training的方法
+CVPR | [Pseudo-label Guided Contrastive Learning for Semi-supervised Medical Image Segmentation](https://paperswithcode.com/paper/pseudo-label-guided-contrastive-learning-for) | 对比学习(contrastive learning)用于半监督的setting
+CVPR | *[MagicNet: Semi-Supervised Multi-Organ Segmentation via Magic-Cube Partition and Recovery](https://arxiv.org/abs/2212.14310) | 提出了一种数据增强策略，鼓励未标注图像从标注图像的相对位置学习器官语义；并且通过立方体伪标签混合来修正原始伪标签
+CVPR | [Bidirectional Copy-Paste for Semi-Supervised Medical Image Segmentation](https://arxiv.org/abs/2305.00673) | 将Copy-Paste这种数据增强方法用于有/无标签数据之间的信息传递
+CVPR | [Hierarchical Supervision and Shuffle Data Augmentation for 3D Semi-Supervised Object Detection](https://arxiv.org/abs/2304.01464) | 3D点云目标检测 - 随机数据增强
+CVPR | [Semi-Weakly Supervised Object Kinematic Motion Prediction](https://arxiv.org/abs/2303.17774) | 3D运动预测 - GNN
+CVPR | [Semi-Supervised Stereo-based 3D Object Detection via Cross-View Consensus](https://openaccess.thecvf.com/content/CVPR2023/papers/Wu_Semi-Supervised_Stereo-Based_3D_Object_Detection_via_Cross-View_Consensus_CVPR_2023_paper.pdf) | stereo-based 3D 目标检测，从cross-view的角度student-teacher约束一致性和refine 伪标签
+CVPR | [Exploring Intra-Class Variation Factors with Learnable Cluster Prompts for Semi-Supervised Image Synthesis](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhang_Exploring_Intra-Class_Variation_Factors_With_Learnable_Cluster_Prompts_for_Semi-Supervised_CVPR_2023_paper.pdf) | semi-supervised GAN framework
+CVPR | [Semi-Supervised Hand Appearance Recovery via Structure Disentanglement and Dual Adversarial Discrimination](https://arxiv.org/abs/2303.06380)
+CVPR | *[Semi-Supervised 2D Human Pose Estimation Driven by Position Inconsistency Pseudo Label Correction Module](https://arxiv.org/abs/2303.04346) | 使用两个teacher模型来修正伪标签，监督student模型
+CVPR | *[ProtoCon: Pseudo-Label Refinement via Online Clustering and Prototypical Consistency for Efficient Semi-Supervised Learning](https://arxiv.org/abs/2303.13556) | 利用最近邻居的信息来完善伪标签
+CVPR | [Semi-Supervised Domain Adaptation with Source Label Adaptation](https://arxiv.org/abs/2302.02335) | 将源数据视为理想目标数据的带有噪声标签的版本, 从目标角度设计的强大清洁组件来动态清理标签噪声
+CVPR | [Towards Realistic Long-Tailed Semi-Supervised Learning: Consistency Is All You Need](https://openaccess.thecvf.com/content/CVPR2023/papers/Wei_Towards_Realistic_Long-Tailed_Semi-Supervised_Learning_Consistency_Is_All_You_Need_CVPR_2023_paper.pdf) | 用一致性约束的方法解决长尾问题
+CVPR | [Semi-Supervised Learning Made Simple with Self-Supervised Clustering](https://arxiv.org/abs/2306.07483) | 用自监督的方法辅助半监督框架中对无标注数据的利用
+CVPR | [Hunting Sparsity: Density-guided Contrastive Learning for Semi-Supervised Semantic Segmentation](https://openaccess.thecvf.com/content/CVPR2023/papers/Wang_Hunting_Sparsity_Density-Guided_Contrastive_Learning_for_Semi-Supervised_Semantic_Segmentation_CVPR_2023_paper.pdf) | 用无监督的方法辅助半监督框架中对无标注数据的利用
+CVPR | [Semi-DETR: Semi-Supervised Object Detection with Detection Transformers](https://arxiv.org/abs/2307.08095) | 基于 Transformer 的端到端半监督对象检测器
+CVPR | *[Ambiguity-Resistant Semi-Supervised Learning for Dense Object Detection](https://arxiv.org/abs/2303.14960) | one-stage 目标检测模型
+CVPR | *[MixTeacher: Mining Promising Labels with Mixed Scale Teacher for Semi-Supervised Object Detection](https://arxiv.org/abs/2303.09061)
+CVPR | [SOOD: Towards Semi-Supervised Oriented Object Detection](https://arxiv.org/abs/2304.04515) | 目标检测
+CVPR | [Out-of-Distributed Semantic Pruning for Robust Semi-Supervised Learning](https://arxiv.org/abs/2305.18158) | 提出了一个称为 OOD 语义剪枝（OSP）的统一框架
+CVPR | [Deep Semi-Supervised Metric Learning with Mixed Label Propagation](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhuang_Deep_Semi-Supervised_Metric_Learning_With_Mixed_Label_Propagation_CVPR_2023_paper.pdf) | 度量学习
+CVPR | [RefTeacher: A Strong Baseline for Semi-Supervised Referring Expression Comprehension]() | 第一个用半监督做指称表达理解(referring expression comprehension)的框架
+CVPR | [Semi-Supervised Parametric Real-World Image Harmonization](https://arxiv.org/abs/2303.00157) | 图像协调
+CVPR | [Contrastive Semi-Supervised Learning for Underwater Image Restoration via Reliable Bank](https://arxiv.org/abs/2303.09101) | 水下图像恢复
+CVPR | *[The Devil is in the Points: Weakly Semi-Supervised Instance Segmentation via Point-guided Mask Representation](https://arxiv.org/abs/2303.15062) | 弱半监督实例分割
+CVPR | [Simultaneously Short- and Long-Term Temporal Modeling for Semi-Supervised Video Semantic Segmentation](https://openaccess.thecvf.com/content/CVPR2023/papers/Lao_Simultaneously_Short-_and_Long-Term_Temporal_Modeling_for_Semi-Supervised_Video_Semantic_CVPR_2023_paper.pdf) | 利用帧间的短期和长期相关性做视频语义分割
+CVPR | [Fuzzy Positive Learning for Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2210.08519) | 模糊正学习(FPL): 自适应地鼓励模糊正预测并抑制高概率的负预测
+CVPR | [Revisiting Weak-to-Strong Consistency in Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2208.09910) | 基于FixMatch, 特征扰动
+CVPR | [SemiCVT: Semi-Supervised Convolutional Vision Transformer for Semantic Segmentation](https://openaccess.thecvf.com/content/CVPR2023/papers/Huang_SemiCVT_Semi-Supervised_Convolutional_Vision_Transformer_for_Semantic_Segmentation_CVPR_2023_paper.pdf) | mean teacher + transformer
+CVPR | *[Conflict-based Cross-View Consistency for Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2303.01276) | 基于co-training, 利用跨视图一致性
+CVPR | [Augmentation Matters: A Simple-yet-Effective Approach to Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2212.04976) | 数据扰动
+CVPR | [Instance-Specific and Model-Adaptive Supervision for Semi-Supervised Semantic Segmentation](https://arxiv.org/abs/2211.11335) | 区分未标记的实例, 动态调整每个实例的增强
+CVPR | *[Boosting Semi-Supervised Learning by Exploiting All Unlabeled Data](https://arxiv.org/abs/2303.11066) | 更好地利用所有未标记的示例
+CVPR | *[HyperMatch: Noise-Tolerant Semi-Supervised Learning via Relaxed Contrastive Constraint](https://openaccess.thecvf.com/content/CVPR2023/papers/Zhou_HyperMatch_Noise-Tolerant_Semi-Supervised_Learning_via_Relaxed_Contrastive_Constraint_CVPR_2023_paper.pdf) | noise-tolerant utilization of unlabeled data
+CVPR | [MarginMatch: Improving Semi-Supervised Learning with Pseudo-Margins](https://arxiv.org/abs/2308.09037) | 随着训练的进行分析模型在伪标记示例上的行为，以确保低质量预测被掩盖了
+CVPR | [Decoupled Semantic Prototypes Enable Learning from Diverse Annotation Types for Semi-Weakly Segmentation in Expert-Driven Domains](https://openaccess.thecvf.com/content/CVPR2023/html/Reiss_Decoupled_Semantic_Prototypes_Enable_Learning_From_Diverse_Annotation_Types_for_CVPR_2023_paper.html) | 半弱分割(多种注释类型中进行学习)
+CVPR | [DualRel: Semi-Supervised Mitochondria Segmentation from a Prototype Perspective](https://openaccess.thecvf.com/content/CVPR2023/papers/Mai_DualRel_Semi-Supervised_Mitochondria_Segmentation_From_a_Prototype_Perspective_CVPR_2023_paper.pdf)
+CVPR | *[PEFAT: Boosting Semi-Supervised Medical Image Classification via Pseudo-Loss Estimation and Feature Adversarial Training](https://openaccess.thecvf.com/content/CVPR2023/papers/Zeng_PEFAT_Boosting_Semi-Supervised_Medical_Image_Classification_via_Pseudo-Loss_Estimation_and_CVPR_2023_paper.pdf) |  trustworthy data selection scheme 
+CVPR | [TimeBalance: Temporally-Invariant and Temporally-Distinctive Video Representations for Semi-Supervised Action Recognition](https://arxiv.org/abs/2303.16268) | 视频理解
+CVPR | [SVFormer: Semi-Supervised Video Transformer for Action Recognition](https://arxiv.org/abs/2211.13222) | 动作识别 - 数据增强，Transformer
+CVPR | [LaserMix for Semi-Supervised LiDAR Semantic Segmentation](https://arxiv.org/abs/2207.00026) | 点云
+CVPR | [CHMATCH: Contrastive Hierarchical Matching and Robust Adaptive Threshold Boosted Semi-Supervised Learning](https://openaccess.thecvf.com/content/CVPR2023/papers/Wu_CHMATCH_Contrastive_Hierarchical_Matching_and_Robust_Adaptive_Threshold_Boosted_Semi-Supervised_CVPR_2023_paper.pdf) |  learn robust adaptive thresholds
+CVPR | [A New Comprehensive Benchmark for Semi-Supervised Video Anomaly Detection and Anticipation](https://arxiv.org/abs/2305.13611) | 半监督视频异常检测数据集 + Benchmark
+CVPR | [Optimal Transport Minimization: Crowd Localization on Density Maps for Semi-Supervised Counting](https://openaccess.thecvf.com/content/CVPR2023/papers/Lin_Optimal_Transport_Minimization_Crowd_Localization_on_Density_Maps_for_Semi-Supervised_CVPR_2023_paper.pdf) | 人群计数
+CVPR | [Semi-Supervised Video Inpainting with Cycle Consistency Constraints](https://arxiv.org/abs/2208.06807) | 视频修复
+CVPR | [Class Balanced Adaptive Pseudo Labeling for Federated Semi-Supervised Learning](https://openaccess.thecvf.com/content/CVPR2023/papers/Li_Class_Balanced_Adaptive_Pseudo_Labeling_for_Federated_Semi-Supervised_Learning_CVPR_2023_paper.pdf) | 联邦半监督学习
+CVPR | [Consistent-Teacher: Towards Reducing Inconsistent Pseudo-Targets in Semi-Supervised Object Detection](https://arxiv.org/abs/2209.01589) | 目标检测
 
 ### 2022
 **Pub.** |**Link** | **Brief Intro**
@@ -300,14 +300,6 @@ NIPS | [Neural View Synthesis and Matching for Semi-Supervised Few-Shot Learning
 NIPS | [Data driven semi-supervised learning]()
 NIPS | [Overcoming the curse of dimensionality with Laplacian regularization in semi-supervised learning]()
 
-### 2020
-**Pub.** |**Link** | **Brief Intro**
-:-: | :-: | :-
-
-### 2019
-**Pub.** |**Link** | **Brief Intro**
-:-: | :-: | :-
-
 ### Previous
 **Year**|**Pub.** |**Link** | **Brief Intro**
 :-:|:-: | :-: | :-
@@ -506,14 +498,6 @@ NIPS | [Exploring Cross-Video and Cross-Modality Signals for Weakly-Supervised A
 NIPS | [Reducing Information Bottleneck for Weakly Supervised Semantic Segmentation]()
 NIPS | [Policy Learning Using Weak Supervision]()
 NIPS | [Joint Semantic Mining for Weakly Supervised RGB-D Salient Object Detection]()
-
-### 2020
-**Pub.** |**Link** | **Brief Intro**
-:-: | :-: | :-
-
-### 2019
-**Pub.** |**Link** | **Brief Intro**
-:-: | :-: | :-
 
 ### Previous
 **Pub.** |**Link** | **Brief Intro**
