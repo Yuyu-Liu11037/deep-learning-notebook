@@ -265,7 +265,6 @@ NIPS | [Overcoming the curse of dimensionality with Laplacian regularization in 
 **Year**|**Pub.** |**Link** | **Brief Intro**
 :-:|:-: | :-: | :-
 2017|NIPS | [Mean teachers are better role models: Weight-averaged consistency targets improve semi-supervised deep learning results](https://arxiv.org/abs/1703.01780) | 提出mean teacher(MT)架构, 将 $\Pi$-model中对预测的EMA改成模型参数的EMA, 在每个step之后更新
-
 ## 弱监督
 ### 2023
 **Pub.** |**Link** | **Brief Intro**
