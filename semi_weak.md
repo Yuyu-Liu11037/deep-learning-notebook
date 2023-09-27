@@ -1,5 +1,5 @@
 # 半监督/弱监督论文整理
-- 任务类别: 语义分割、实例分割、视频理解、图像分类、目标检测、目标定位、域适应、度量学习、人群计数、联邦学习、知识蒸馏、图像修复、重新识别、小样本学习
+- 任务类别: 语义分割、实例分割、视频理解、图像分类、目标检测、目标定位、域适应、度量学习、人群计数、联邦学习、知识蒸馏、图像修复、重新识别、小样本学习、课程学习
 - 近3年会议/期刊:
   - CVPR: 2023, 2022, 2021 
   - ICCV: 2023, 2021
@@ -167,126 +167,99 @@ NIPS | [Semi-Supervised Generative Models for Multiagent Trajectories](https://p
 MICCAI | [Noisy Labels are Treasure: Mean-Teacher-assisted Confident Learning for Hepatic Vessel Segmentation](https://arxiv.org/abs/2106.01860) | 利用定点学习技术改进加权平均MT模型，更好地利用低质量数据
 AAAI | [Structure-Consistent Weakly Supervised Salient Object Detection with Local Saliency Coherence](https://arxiv.org/abs/2012.04404) | 弱监督(涂鸦标签)SOD网络
 CVPR | [CPS: Semi-Supervised Semantic Segmentation with Cross Pseudo Supervision](https://zhuanlan.zhihu.com/p/378120529) | 提出了新的半监督语义分割算法
-CVPR | [Semi-supervised Domain Adaptation based on Dual-level Domain Mixing for Semantic Segmentation](https://arxiv.org/abs/2103.04705) | 
-CVPR | [Semi-Supervised Semantic Segmentation With Directional Context-Aware Consistency](https://openaccess.thecvf.com/content/CVPR2021/html/Lai_Semi-Supervised_Semantic_Segmentation_With_Directional_Context-Aware_Consistency_CVPR_2021_paper.html) | 
-CVPR | [Semantic Segmentation With Generative Models: Semi-Supervised Learning and Strong Out-of-Domain Generalization](https://openaccess.thecvf.com/content/CVPR2021/html/Li_Semantic_Segmentation_With_Generative_Models_Semi-Supervised_Learning_and_Strong_Out-of-Domain_CVPR_2021_paper.html) | 
-CVPR | [Three Ways To Improve Semantic Segmentation With Self-Supervised Depth Estimation](https://openaccess.thecvf.com/content/CVPR2021/html/Hoyer_Three_Ways_To_Improve_Semantic_Segmentation_With_Self-Supervised_Depth_Estimation_CVPR_2021_paper.html) | 
-ICCV | [Spatial Uncertainty-Aware-Semi-Supervised-Crowd-Counting](https://arxiv.org/abs/2107.13271) | 
-ICCV | [Trash to Treasure: Harvesting OOD Data with Cross-Modal Matching for Open-Set Semi-Supervised Learning](https://arxiv.org/abs/2108.05617) | 
-ICCV | [Semi-Supervised Learning of Visual Features by Non-Parametrically Predicting View Assignments With Support Samples](https://arxiv.org/abs/2104.13963) | 
-ICCV | [Semi-Supervised Active Learning for Semi-Supervised Models: Exploit Adversarial Examples With Graph-Based Virtual Labels](https://openaccess.thecvf.com/content/ICCV2021/papers/Guo_Semi-Supervised_Active_Learning_for_Semi-Supervised_Models_Exploit_Adversarial_Examples_With_ICCV_2021_paper.pdf) | 
-ICCV | [CoMatch: Semi-Supervised Learning With Contrastive Graph Regularization](https://arxiv.org/abs/2011.11183) | 
-ICCV | [Multiview Pseudo-Labeling for Semi-supervised Learning from Video](https://arxiv.org/abs/2104.00682) | 
-ICCV | [Graph-BAS3Net: Boundary-Aware Semi-Supervised Segmentation Network With Bilateral Graph Convolution](https://openaccess.thecvf.com/content/ICCV2021/papers/Huang_Graph-BAS3Net_Boundary-Aware_Semi-Supervised_Segmentation_Network_With_Bilateral_Graph_Convolution_ICCV_2021_paper.pdf) | 
-ICCV | [Collaborative and Adversarial Learning of Focused and Dispersive Representations for Semi-Supervised Polyp Segmentation](https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_Collaborative_and_Adversarial_Learning_of_Focused_and_Dispersive_Representations_for_ICCV_2021_paper.pdf) | 
-ICCV | [Semi-Supervised Active Learning with Temporal Output Discrepancy](https://arxiv.org/abs/2107.14153) | 
-ICCV | [Warp-Refine Propagation: Semi-Supervised Auto-labeling via Cycle-consistency](https://arxiv.org/abs/2109.13432) | 
-ICCV | [Semi-Supervised Semantic Segmentation With Pixel-Level Contrastive Learning From a Class-Wise Memory Bank](https://arxiv.org/abs/2104.13415) | 
-MICCAI | [3D Graph-S2Net: Shape-Aware Self-Ensembling Network for Semi-Supervised Segmentation with Bilateral Graph Convolution]() | 
-MICCAI | [3D Semantic Mapping from Arthroscopy using Out-of-distribution Pose and Depth and In-distribution Segmentation Training]() | 
-MICCAI | [A Deep Network for Joint Registration and Parcellation of Cortical Surfaces]() | 
-MICCAI | [Anatomy-Constrained Contrastive Learning for Synthetic Segmentation without Ground-truth]() | 
-MICCAI | [Annotation-efficient Cell Counting]()
-MICCAI | [Cell Detection from Imperfect Annotation by Pseudo Label Selection Using P-classification]()
-MICCAI | [Cell Detection in Domain Shift Problem Using Pseudo-Cell-Position Heatmap]()
-MICCAI | [Conditional GAN with an Attention-based Generator and a 3D Discriminator for 3D Medical Image Generation]()
-MICCAI | [Context-aware virtual adversarial training for anatomically-plausible segmenation]()
-MICCAI | [Detection of critical structures in laparoscopic cholecystectomy using label relaxation and self-supervision]()
-MICCAI | [Disentangled Sequential Graph Autoencoder for Preclinical Alzheimer's Disease Characterizations from ADNI Study]()
-MICCAI | [Dual-Consistency Semi-Supervised Learning with Uncertainty Quantification for COVID-19 Lesion Segmentation from CT Images]()
-MICCAI | [Duo-SegNet: Adversarial Dual-Views for Semi-Supervised Medical Image Segmentation]()
-MICCAI | [Efficient Semi-Supervised Gross Target Volume of Nasopharyngeal Carcinoma Segmentation via Uncertainty Rectified Pyramid Consistency]()
-MICCAI | [Federated Contrastive Learning for Volumetric Medical Image Segmentation]()
-MICCAI | [Federated Semi-supervised Medical Image Classification via Inter-client Relation Matching]()
-MICCAI | [FedPerl: Semi-Supervised Peer Learning for Skin Lesion Classification]()
-MICCAI | [Few Trust Data Guided Annotation Refinement for Upper Gastrointestinal Anatomy Recognition]()
-MICCAI | [Few-Shot Domain Adaptation with Polymorphic Transformers]()
-MICCAI | [Functional Magnetic Resonance Imaging data augmentation through conditional ICA]()
-MICCAI | [GKD: Semi-supervised Graph Knowledge Distillation for Graph-Independent Inference]()
-MICCAI | [I-SECRET: Importance-guided fundus image enhancement via semi-supervised contrastive constraining]()
-MICCAI | [Joint PVL Detection and Manual Ability Classification using Semi-Supervised Multi-task Learning]()
-MICCAI | [MT-UDA: Towards Unsupervised Cross-Modality Medical Image Segmentation with Limited Source Labels]()
-MICCAI | [Multimodal Representation Learning via Maximization of Local Mutual Information]()
-MICCAI | [Neighbor Matching for Semi-supervised Learning]()
-MICCAI | [One-Shot Medical Landmark Detection]()
-MICCAI | [Order-Guided Disentangled Representation Learning for Ulcerative Colitis Classification with Limited Labels]()
-MICCAI | [OXnet: Deep Omni-supervised Thoracic Disease Detection from Chest X-rays]()
-MICCAI | [Partial-supervised Learning for Vessel Segmentation in Ocular Images]()
-MICCAI | [Pay Attention with Focus: A Novel Learning Scheme for Classification of Whole Slide Images]()
-MICCAI | [POPCORN: Progressive Pseudo-labeling with Consistency Regularization and Neighboring]()
-MICCAI | [Positional Contrastive Learning for Volumetric Medical Image Segmentation]()
-MICCAI | [Projection-wise Disentangling for Fair and Interpretable Representation Learning: Application to 3D Facial Shape Analysis]()
-MICCAI | [Reciprocal Learning for Semi-supervised Segmentation]()
-MICCAI | [Scalable joint detection and segmentation of surgical instruments with weak supervision]()
-MICCAI | [Segmentation of Left Atrial MR Images via Self-supervised Semi-supervised Meta-learning]()
-MICCAI | [Self-Supervised Correction Learning for Semi-Supervised Biomedical Image Segmentation]()
-MICCAI | [Self-supervised visual representation learning for histopathological images]()
-MICCAI | [Semi-supervised Adversarial Learning for Stain Normalisation in Histopathology Images]()
-MICCAI | [Semi-supervised Cell Detection in Time-lapse Images Using Temporal Consistency]()
-MICCAI | [Semi-supervised Contrastive Learning for Label-efficient Medical Image Segmentation]()
-MICCAI | [Semi-Supervised Learning for Bone Mineral Density Estimation in Hip X-ray Images]()
-MICCAI | [Semi-supervised Left Atrium Segmentation with Mutual Consistency Training]()
-MICCAI | [Semi-supervised Meta-learning with Disentanglement for Domain-generalised Medical Image Segmentation]()
-MICCAI | [Semi-Supervised Unpaired Multi-Modal Learning for Label-Efficient Medical Image Segmentation]()
-MICCAI | [Spectral Embedding Approximation and Descriptor Learning for Craniofacial Volumetric Image Correspondence]()
-MICCAI | [Tripled-uncertainty Guided Mean Teacher model for Semi-supervised Medical Image Segmentation]()
-MICCAI | [USCL: Pretraining Deep Ultrasound Image Diagnosis Model through Video Contrastive Representation Learning]()
-AAAI | [SHOT-VAE: Semi-Supervised Deep Generative Models with Label-Aware ELBO Approximations]()
-AAAI | [Semi-Supervised Metric Learning: A Deep Resurrection]()
-AAAI | [Semi-Supervised Medical Image Segmentation through Dual-Task Consistency]()
-AAAI | [PTN: A Poisson Transfer Network for Semi-Supervised Few-Shot Learning]()
-AAAI | [Semi-Supervised Knowledge Amalgamation for Sequence Classification]()
-AAAI | [Inferring Emotion from Large-Scale Internet Voice Data: A Semi-Supervised Curriculum Augmentation Based Deep Learning Approach]()
-AAAI | [Contrastive and Generative Graph Convolutional Networks for Graph-Based SemiSupervised Learning]()
-AAAI | [What the Role Is vs. What Plays the Role: Semi-Supervised Event Argument Extraction via Dual Question Answering]()
-AAAI | [Semi-Supervised Node Classification on Graphs: Markov Random Fields vs. Graph Neural Networks]()
-AAAI | [On Generating Plausible Counterfactual and Semi-Factual Explanations for Deep Learning]()
-AAAI | [Hierarchical Information Passing Based Noise-Tolerant Hybrid Learning for Semi-Supervised Human Parsing]()
-AAAI | [Semi-Supervised Sequence Classification through Change Point Detection]()
-AAAI | [SSPC-Net: Semi-Supervised Semantic 3D Point Cloud Segmentation Network]()
-AAAI | [ PASSLEAF: A Pool-Based Semi-Supervised Learning Framework for Uncertain Knowledge Graph Embedding]()
-AAAI | [On the Complexity of Sum-of-Products Problems over Semirings]()
-AAAI | [Task Cooperation for Semi-Supervised Few-Shot Learning]()
-AAAI | [Explanation Consistency Training: Facilitating Consistency-Based Semi-Supervised Learning with Interpretability]()
-AAAI | [Generative Semi-Supervised Learning for Multivariate Time Series Imputation]()
-AAAI | [SALNet: Semi-Supervised Few-Shot Text Classification with Attention-Based Lexicon Construction]()
-AAAI | [Semi-Supervised Learning for Multi-Task Scene Understanding by Neural Graph Consensus]()
-AAAI | [DeHiB: Deep Hidden Backdoor Attack on Semi-Supervised Learning via Adversarial Perturbation]()
-AAAI | [Exploiting Unlabeled Data via Partial Label Assignment for Multi-Class Semi-Supervised Learning]()
-AAAI | [GraphMix: Improved Training of GNNs for Semi-Supervised Learning]()
-AAAI | [Curriculum Labeling: Revisiting Pseudo-Labeling for Semi-Supervised Learning]()
-AAAI | [Class-Attentive Diffusion Network for Semi-Supervised Classification]()
-AAAI | [Semi-Supervised Learning with Variational Bayesian Inference and Maximum Uncertainty Regularization]()
-AAAI | [Instance Mining with Class Feature Banks for Weakly Supervised Object Detection]()
-AAAI | [ACSNet: Action-Context Separation Network for Weakly Supervised Temporal Action Localization]()
-AAAI | [DenserNet: Weakly Supervised Visual Localization Using Multi-Scale Feature Aggregation]()
-AAAI | [Weakly Supervised Temporal Action Localization through Learning Explicit Subspaces for Action and Context]()
-AAAI | [Query-Memory Re-Aggregation for Weakly-Supervised Video Object Segmentation]()
-AAAI | [Diagnose Like a Pathologist: Weakly-Supervised Pathologist-Tree Network for Slide-Level Immunohistochemical Scoring]()
-AAAI | [Discriminative Region Suppression for Weakly-Supervised Semantic Segmentation]()
-AAAI | [Learning by Fixing: Solving Math Word Problems with Weak Supervision]()
-AAAI | [Deductive Learning for Weakly-Supervised 3D Human Pose Estimation via Uncalibrated Cameras]()
-AAAI | [Effective Slot Filling via Weakly-Supervised Dual-Model Learning]()
-AAAI | [A Hybrid Attention Mechanism for Weakly-Supervised Temporal Action Localization]()
-AAAI | [Argumentation Frameworks with Strong and Weak Constraints: Semantics and Complexity]()
-AAAI | [Minimizing Labeling Cost for Nuclei Instance Segmentation and Classificationwith CrossDomain Images and Weak Labels]()
-AAAI | [StarNet: Towards Weakly Supervised Few-Shot Object Detection]()
-AAAI | [Weakly-Supervised Hierarchical Models for Predicting Persuasive Strategies in Good-Faith Textual Requests]()
-NIPS | [Topology-Imbalance Learning for Semi-Supervised Node Classification]()
-NIPS | [Minimax Optimal Quantile and Semi-Adversarial Regret via Root-Logarithmic Regularizers]()
-NIPS | [Universal Semi-Supervised Learning]()
-NIPS | [OpenMatch: Open-Set Semi-supervised Learning with Open-set Consistency Regularization]()
-NIPS | [CLDA: Contrastive Learning for Semi-Supervised Domain Adaptation]()
-NIPS | [Semi-Supervised Semantic Segmentation via Adaptive Equalization Learning]()
-NIPS | [FlexMatch: Boosting Semi-Supervised Learning with Curriculum Pseudo Labeling]()
-NIPS | [Self-Paced Contrastive Learning for Semi-supervised Medical Image Segmentation with Meta-labels]()
-NIPS | [Contrastive Graph Poisson Networks: Semi-Supervised Learning with Extremely Limited Labels]()
-NIPS | [Combating Noise: Semi-supervised Learning by Region Uncertainty Quantification]()
-NIPS | [RETRIEVE: Coreset Selection for Efficient and Robust Semi-Supervised Learning]()
-NIPS | [DP-SSL: Towards Robust Semi-supervised Learning with A Few Labeled Samples]()
-NIPS | [Neural View Synthesis and Matching for Semi-Supervised Few-Shot Learning of 3D Pose]()
-NIPS | [Data driven semi-supervised learning]()
-NIPS | [Overcoming the curse of dimensionality with Laplacian regularization in semi-supervised learning]()
+CVPR | [Semi-supervised Domain Adaptation based on Dual-level Domain Mixing for Semantic Segmentation](https://arxiv.org/abs/2103.04705) |域适应 
+CVPR | [Semi-Supervised Semantic Segmentation With Directional Context-Aware Consistency](https://openaccess.thecvf.com/content/CVPR2021/html/Lai_Semi-Supervised_Semantic_Segmentation_With_Directional_Context-Aware_Consistency_CVPR_2021_paper.html) | 特征之间的上下文感知一致性
+CVPR | [Semantic Segmentation With Generative Models: Semi-Supervised Learning and Strong Out-of-Domain Generalization](https://openaccess.thecvf.com/content/CVPR2021/html/Li_Semantic_Segmentation_With_Generative_Models_Semi-Supervised_Learning_and_Strong_Out-of-Domain_CVPR_2021_paper.html) | 半监督 + GAN
+CVPR | [Three Ways To Improve Semantic Segmentation With Self-Supervised Depth Estimation](https://openaccess.thecvf.com/content/CVPR2021/html/Hoyer_Three_Ways_To_Improve_Semantic_Segmentation_With_Self-Supervised_Depth_Estimation_CVPR_2021_paper.html) | 半监督语义分割框架
+ICCV | [Spatial Uncertainty-Aware-Semi-Supervised-Crowd-Counting](https://arxiv.org/abs/2107.13271) | 人群计数
+ICCV | [Trash to Treasure: Harvesting OOD Data with Cross-Modal Matching for Open-Set Semi-Supervised Learning](https://arxiv.org/abs/2108.05617) | 开放集半监督学习 
+ICCV | [Semi-Supervised Learning of Visual Features by Non-Parametrically Predicting View Assignments With Support Samples](https://arxiv.org/abs/2104.13963) | 预测视图分配
+ICCV | [Semi-Supervised Active Learning for Semi-Supervised Models: Exploit Adversarial Examples With Graph-Based Virtual Labels](https://openaccess.thecvf.com/content/ICCV2021/papers/Guo_Semi-Supervised_Active_Learning_for_Semi-Supervised_Models_Exploit_Adversarial_Examples_With_ICCV_2021_paper.pdf) | 主动学习
+ICCV | [CoMatch: Semi-Supervised Learning With Contrastive Graph Regularization](https://arxiv.org/abs/2011.11183) | Match系列
+ICCV | [Multiview Pseudo-Labeling for Semi-supervised Learning from Video](https://arxiv.org/abs/2104.00682) | 视频理解
+ICCV | [Graph-BAS3Net: Boundary-Aware Semi-Supervised Segmentation Network With Bilateral Graph Convolution](https://openaccess.thecvf.com/content/ICCV2021/papers/Huang_Graph-BAS3Net_Boundary-Aware_Semi-Supervised_Segmentation_Network_With_Bilateral_Graph_Convolution_ICCV_2021_paper.pdf) | 医学图像分割 - 边界可知的半监督网络
+ICCV | *[Collaborative and Adversarial Learning of Focused and Dispersive Representations for Semi-Supervised Polyp Segmentation](https://openaccess.thecvf.com/content/ICCV2021/papers/Wu_Collaborative_and_Adversarial_Learning_of_Focused_and_Dispersive_Representations_for_ICCV_2021_paper.pdf) | 对抗学习
+ICCV | [Semi-Supervised Active Learning with Temporal Output Discrepancy](https://arxiv.org/abs/2107.14153) | 主动学习
+ICCV | [Warp-Refine Propagation: Semi-Supervised Auto-labeling via Cycle-consistency](https://arxiv.org/abs/2109.13432) | 动注释视频序列
+ICCV | [Semi-Supervised Semantic Segmentation With Pixel-Level Contrastive Learning From a Class-Wise Memory Bank](https://arxiv.org/abs/2104.13415) | 半监督语义分割 - 对比学习
+MICCAI | [3D Graph-S2Net: Shape-Aware Self-Ensembling Network for Semi-Supervised Segmentation with Bilateral Graph Convolution](https://link.springer.com/chapter/10.1007/978-3-030-87196-3_39) | 半监督医学图像分割 - 物体的几何形状感知 
+MICCAI | [3D Semantic Mapping from Arthroscopy using Out-of-distribution Pose and Depth and In-distribution Segmentation Training](https://arxiv.org/abs/2106.05525) |提出了第一个来自膝关节镜的 3D 语义映射系统
+MICCAI | [A Deep Network for Joint Registration and Parcellation of Cortical Surfaces](https://link.springer.com/chapter/10.1007/978-3-030-87202-1_17) |  联合皮质表面注册和分割
+MICCAI | [Anatomy-Constrained Contrastive Learning for Synthetic Segmentation without Ground-truth](https://arxiv.org/abs/2107.05482) |利用一种成像模态（例如，CT）中的手动分割来训练另一种成像模态（例如，CBCT/MRI/PET）中的分割网络 
+MICCAI | [Annotation-efficient Cell Counting](https://link.springer.com/chapter/10.1007/978-3-030-87237-3_39) | 细胞计数 - 主动学习
+MICCAI | [Cell Detection from Imperfect Annotation by Pseudo Label Selection Using P-classification](https://arxiv.org/abs/2107.09289) | 细胞检测 - CNN + 新技术 (正向无标记（PU）学习和 P 分类)
+MICCAI | [Cell Detection in Domain Shift Problem Using Pseudo-Cell-Position Heatmap](https://arxiv.org/abs/2107.08653) | 细胞检测中的域转移
+MICCAI | [Conditional GAN with an Attention-based Generator and a 3D Discriminator for 3D Medical Image Generation](https://link.springer.com/chapter/10.1007/978-3-030-87231-1_31) | 图像生成 - 条件生成对抗网络（cGAN）
+MICCAI | [Context-aware virtual adversarial training for anatomically-plausible segmenation](https://arxiv.org/abs/2107.05532) | 图像分割 - GAN
+MICCAI | *[Dual-Consistency Semi-Supervised Learning with Uncertainty Quantification for COVID-19 Lesion Segmentation from CT Images](https://arxiv.org/abs/2104.03225) | 图像分割 - 提出了一种不确定性引导的双一致性学习网络
+MICCAI | [Duo-SegNet: Adversarial Dual-Views for Semi-Supervised Medical Image Segmentation](https://arxiv.org/abs/2108.11154) | 图像分割 - 多视图学习
+MICCAI | [Efficient Semi-Supervised Gross Target Volume of Nasopharyngeal Carcinoma Segmentation via Uncertainty Rectified Pyramid Consistency](https://arxiv.org/abs/2012.07042) | 图像分割 - 用于半监督 NPC GTV 分割的不确定性修正金字塔一致性（URPC）正则化的新颖框架
+MICCAI | [Federated Contrastive Learning for Volumetric Medical Image Segmentation](https://arxiv.org/abs/2204.10983) | 图像分割 - 联邦学习 + 对比学习
+MICCAI | [Federated Semi-supervised Medical Image Classification via Inter-client Relation Matching](https://arxiv.org/abs/2106.08600) | 图像分割 - 联邦学习
+MICCAI | [FedPerl: Semi-Supervised Peer Learning for Skin Lesion Classification](https://arxiv.org/abs/2103.03703) | 图像分割 - 联邦学习
+MICCAI | [Few Trust Data Guided Annotation Refinement for Upper Gastrointestinal Anatomy Recognition](https://link.springer.com/chapter/10.1007/978-3-030-87240-3_54) | 数据集改进 - 提出了一种有效的注释细化方法
+MICCAI | [Few-Shot Domain Adaptation with Polymorphic Transformers](https://arxiv.org/abs/2107.04805) | 域适应 - Transformer
+MICCAI | [Functional Magnetic Resonance Imaging data augmentation through conditional ICA](https://arxiv.org/abs/2107.06104) | 数据增强
+MICCAI | [GKD: Semi-supervised Graph Knowledge Distillation for Graph-Independent Inference](https://arxiv.org/abs/2104.03597) | ?疾病诊断 - GNN
+MICCAI | [I-SECRET: Importance-guided fundus image enhancement via semi-supervised contrastive constraining](https://link.springer.com/chapter/10.1007/978-3-030-87237-3_9) | 图像增强
+MICCAI | [Joint PVL Detection and Manual Ability Classification using Semi-Supervised Multi-task Learning](https://link.springer.com/chapter/10.1007/978-3-030-87234-2_43) | PVL病灶分割
+MICCAI | [MT-UDA: Towards Unsupervised Cross-Modality Medical Image Segmentation with Limited Source Labels](https://arxiv.org/abs/2203.12454) | 域适应
+MICCAI | [Multimodal Representation Learning via Maximization of Local Mutual Information](https://arxiv.org/abs/2103.04537) | 多模态表示学习
+MICCAI | [Neighbor Matching for Semi-supervised Learning](https://link.springer.com/chapter/10.1007/978-3-030-87196-3_41) | 半监督分类
+MICCAI | [One-Shot Medical Landmark Detection](https://arxiv.org/abs/2103.04527) | 提出了一种名为级联比较检测（CC2D）的新颖框架，用于一次性地标检测
+MICCAI | [Order-Guided Disentangled Representation Learning for Ulcerative Colitis Classification with Limited Labels](https://arxiv.org/abs/2111.03815) | 溃疡性结肠炎（UC）分类
+MICCAI | ^[POPCORN: Progressive Pseudo-labeling with Consistency Regularization and Neighboring](https://arxiv.org/abs/2109.06361) | 图像分割 - 结合一致性正则化和伪标签
+MICCAI | [Positional Contrastive Learning for Volumetric Medical Image Segmentation](https://arxiv.org/abs/2106.09157) | 图像分割 - 对比学习
+MICCAI | [Reciprocal Learning for Semi-supervised Segmentation](https://link.springer.com/chapter/10.1007/978-3-030-87196-3_33) | 新半监督学习策略 - 交互学习
+MICCAI | [Segmentation of Left Atrial MR Images via Self-supervised Semi-supervised Meta-learning](https://link.springer.com/chapter/10.1007/978-3-030-87196-3_2) | 心脏MR分割 - 提出了一个统一的预训练框架
+MICCAI | [Self-Supervised Correction Learning for Semi-Supervised Biomedical Image Segmentation](https://arxiv.org/abs/2301.04866) | 图像分割
+MICCAI | [Semi-supervised Adversarial Learning for Stain Normalisation in Histopathology Images](https://link.springer.com/chapter/10.1007/978-3-030-87237-3_56) | 预处理 - GAN
+MICCAI | [Semi-supervised Cell Detection in Time-lapse Images Using Temporal Consistency](https://arxiv.org/abs/2107.08639) | 细胞检测
+MICCAI | [Semi-supervised Contrastive Learning for Label-efficient Medical Image Segmentation](https://arxiv.org/abs/2109.07407) | 图像分割 - 对比学习
+MICCAI | [Semi-Supervised Learning for Bone Mineral Density Estimation in Hip X-ray Images](https://arxiv.org/abs/2103.13482) | 骨矿物质密度（BMD）估计
+MICCAI | [Semi-supervised Left Atrium Segmentation with Mutual Consistency Training](https://arxiv.org/abs/2103.02911) | 3D MR 图像分割
+MICCAI | [Semi-supervised Meta-learning with Disentanglement for Domain-generalised Medical Image Segmentation](https://arxiv.org/abs/2106.13292) | 域转移
+MICCAI | [Semi-Supervised Unpaired Multi-Modal Learning for Label-Efficient Medical Image Segmentation](https://link.springer.com/chapter/10.1007/978-3-030-87196-3_37) | 不配对多模态学习
+MICCAI | *[Tripled-uncertainty Guided Mean Teacher model for Semi-supervised Medical Image Segmentation](https://link.springer.com/chapter/10.1007/978-3-030-87196-3_42) | 图像分割
+MICCAI | [USCL: Pretraining Deep Ultrasound Image Diagnosis Model through Video Contrastive Representation Learning](https://arxiv.org/abs/2011.13066) | 超声 (US) 医学图像分割 - 对比学习
+AAAI | [SHOT-VAE: Semi-Supervised Deep Generative Models with Label-Aware ELBO Approximations](https://arxiv.org/abs/2011.10684) | 变分自动编码器
+AAAI | [Semi-Supervised Metric Learning: A Deep Resurrection](https://arxiv.org/abs/2105.05061) | 距离度量学习
+AAAI | [Semi-Supervised Medical Image Segmentation through Dual-Task Consistency](https://arxiv.org/abs/2009.04448) | 图像分割
+AAAI | [PTN: A Poisson Transfer Network for Semi-Supervised Few-Shot Learning](https://arxiv.org/abs/2012.10844) | 小样本学习
+AAAI | [Semi-Supervised Knowledge Amalgamation for Sequence Classification](https://ojs.aaai.org/index.php/AAAI/article/view/17185)|序列分类
+AAAI | [Inferring Emotion from Large-Scale Internet Voice Data: A Semi-Supervised Curriculum Augmentation Based Deep Learning Approach](https://ojs.aaai.org/index.php/AAAI/article/view/16753) | 情感推断
+AAAI | [Contrastive and Generative Graph Convolutional Networks for Graph-Based SemiSupervised Learning](https://arxiv.org/abs/2009.07111) | GCN
+AAAI | [What the Role Is vs. What Plays the Role: Semi-Supervised Event Argument Extraction via Dual Question Answering](https://ojs.aaai.org/index.php/AAAI/article/view/17720) | 事件提取
+AAAI | [Semi-Supervised Node Classification on Graphs: Markov Random Fields vs. Graph Neural Networks](https://arxiv.org/abs/2012.13085) | 图节点分类
+AAAI | [Hierarchical Information Passing Based Noise-Tolerant Hybrid Learning for Semi-Supervised Human Parsing](https://ojs.aaai.org/index.php/AAAI/article/view/16319) | 人体解析
+AAAI | [Semi-Supervised Sequence Classification through Change Point Detection](https://arxiv.org/abs/2009.11829) | 序列分类
+AAAI | [SSPC-Net: Semi-Supervised Semantic 3D Point Cloud Segmentation Network](https://arxiv.org/abs/2104.07861)  | 点云语义分割
+AAAI | [PASSLEAF: A Pool-Based Semi-Supervised Learning Framework for Uncertain Knowledge Graph Embedding](https://ojs.aaai.org/index.php/AAAI/article/view/16522) | 嵌入不确定知识图
+AAAI | [Task Cooperation for Semi-Supervised Few-Shot Learning](https://ojs.aaai.org/index.php/AAAI/article/view/17277) | 小样本学习
+AAAI | [Explanation Consistency Training: Facilitating Consistency-Based Semi-Supervised Learning with Interpretability](https://ojs.aaai.org/index.php/AAAI/article/view/16934) | 可解释性
+AAAI | [Generative Semi-Supervised Learning for Multivariate Time Series Imputation](https://ojs.aaai.org/index.php/AAAI/article/view/17086) | 
+AAAI | [SALNet: Semi-Supervised Few-Shot Text Classification with Attention-Based Lexicon Construction](https://ojs.aaai.org/index.php/AAAI/article/view/17086) | 多元时间序列 - GAN
+AAAI | [Semi-Supervised Learning for Multi-Task Scene Understanding by Neural Graph Consensus](https://arxiv.org/abs/2010.01086) | GNN
+AAAI | [DeHiB: Deep Hidden Backdoor Attack on Semi-Supervised Learning via Adversarial Perturbation](https://ojs.aaai.org/index.php/AAAI/article/view/17266) | 数据中毒后门攻击
+AAAI | *[Exploiting Unlabeled Data via Partial Label Assignment for Multi-Class Semi-Supervised Learning](https://ojs.aaai.org/index.php/AAAI/article/view/17310) | 图像分类
+AAAI | [GraphMix: Improved Training of GNNs for Semi-Supervised Learning](https://arxiv.org/abs/1909.11715) | 图像分类 - GNN
+AAAI | *[Curriculum Labeling: Revisiting Pseudo-Labeling for Semi-Supervised Learning](https://arxiv.org/abs/2001.06001) | 课程学习
+AAAI | [Class-Attentive Diffusion Network for Semi-Supervised Classification](https://arxiv.org/abs/2006.10222) | 图像分类
+AAAI | [Semi-Supervised Learning with Variational Bayesian Inference and Maximum Uncertainty Regularization](https://arxiv.org/abs/2012.01793) | 两种改进半监督学习（SSL）的通用方法
+NIPS | [Topology-Imbalance Learning for Semi-Supervised Node Classification](https://arxiv.org/abs/2110.04099) | 类不平衡问题
+NIPS | [Universal Semi-Supervised Learning](https://proceedings.neurips.cc/paper/2021/hash/e06f967fb0d355592be4e7674fa31d26-Abstract.html) |开放集问题 
+NIPS | [OpenMatch: Open-Set Semi-supervised Learning with Open-set Consistency Regularization](https://arxiv.org/abs/2105.14148) | 开放集问题
+NIPS | [CLDA: Contrastive Learning for Semi-Supervised Domain Adaptation](https://arxiv.org/abs/2107.00085) | 域适应
+NIPS | [Semi-Supervised Semantic Segmentation via Adaptive Equalization Learning](https://arxiv.org/abs/2110.05474) | 类不平衡问题
+NIPS | [FlexMatch: Boosting Semi-Supervised Learning with Curriculum Pseudo Labeling](https://arxiv.org/abs/2110.08263) | 课程学习
+NIPS | [Self-Paced Contrastive Learning for Semi-supervised Medical Image Segmentation with Meta-labels](https://proceedings.neurips.cc/paper/2021/hash/8b5c8441a8ff8e151b191c53c1842a38-Abstract.html) | 图像分割 - 对比学习
+NIPS | [Contrastive Graph Poisson Networks: Semi-Supervised Learning with Extremely Limited Labels](https://proceedings.neurips.cc/paper/2021/hash/31c0b36aef265d9221af80872ceb62f9-Abstract.html) | GNN
+NIPS | *[Combating Noise: Semi-supervised Learning by Region Uncertainty Quantification](https://arxiv.org/abs/2111.00928) | 图像分割 - 伪标签
+NIPS | [RETRIEVE: Coreset Selection for Efficient and Robust Semi-Supervised Learning](https://arxiv.org/abs/2106.07760) | 通用方法 - 核心集选择框架
+NIPS | [DP-SSL: Towards Robust Semi-supervised Learning with A Few Labeled Samples](https://arxiv.org/abs/2110.13740) | 图像分类 - 数据编程
+NIPS | [Neural View Synthesis and Matching for Semi-Supervised Few-Shot Learning of 3D Pose](https://arxiv.org/abs/2110.14213) | 小样本学习
+NIPS | [Data driven semi-supervised learning](https://arxiv.org/abs/2103.10547) | 通用方法 - GNN
+NIPS | [Overcoming the curse of dimensionality with Laplacian regularization in semi-supervised learning](https://arxiv.org/abs/2009.04324)| 通用方法 - 拉普拉斯正则化
 
 ### Previous
 **Year**|**Pub.** |**Link** | **Brief Intro**
@@ -399,7 +372,6 @@ NIPS | [What is Where by Looking: Weakly-Supervised Open-World Phrase-Grounding 
 NIPS | [A Closer Look at Weakly-Supervised Audio-Visual Source Localization]()
 NIPS | [[Re] Background-Aware Pooling and Noise-Aware Loss for Weakly-Supervised Semantic Segmentation]()
 NIPS | [Expansion and Shrinkage of Localization for Weakly-Supervised Semantic Segmentation]()
-
 ### 2021
 **Pub.** |**Link** | **Brief Intro**
 :-: | :-: | :-
@@ -481,12 +453,24 @@ AAAI | [Weakly Supervised Deep Hyperspherical Quantization for Image Retrieval](
 AAAI | [Group-Wise Semantic Mining for Weakly Supervised Semantic Segmentation]()
 AAAI | [Weakly Supervised Semantic Segmentation for Large-Scale Point Cloud]()
 AAAI | [GradingNet: Towards Providing Reliable Supervisions for Weakly Supervised Object Detection by Grading the Box Candidates]()
+AAAI | [ACSNet: Action-Context Separation Network for Weakly Supervised Temporal Action Localization]()
+AAAI | [DenserNet: Weakly Supervised Visual Localization Using Multi-Scale Feature Aggregation]()
+AAAI | [Weakly Supervised Temporal Action Localization through Learning Explicit Subspaces for Action and Context]()
+AAAI | [Query-Memory Re-Aggregation for Weakly-Supervised Video Object Segmentation]()
+AAAI | [Diagnose Like a Pathologist: Weakly-Supervised Pathologist-Tree Network for Slide-Level Immunohistochemical Scoring]()
+AAAI | [Discriminative Region Suppression for Weakly-Supervised Semantic Segmentation]()
+AAAI | [Learning by Fixing: Solving Math Word Problems with Weak Supervision]()
+AAAI | [Deductive Learning for Weakly-Supervised 3D Human Pose Estimation via Uncalibrated Cameras]()
+AAAI | [Effective Slot Filling via Weakly-Supervised Dual-Model Learning]()
+AAAI | [A Hybrid Attention Mechanism for Weakly-Supervised Temporal Action Localization]()
+AAAI | [Minimizing Labeling Cost for Nuclei Instance Segmentation and Classificationwith CrossDomain Images and Weak Labels]()
+AAAI | [StarNet: Towards Weakly Supervised Few-Shot Object Detection]()
+AAAI | [Weakly-Supervised Hierarchical Models for Predicting Persuasive Strategies in Good-Faith Textual Requests]()
 NIPS | [End-to-End Weak Supervision]()
 NIPS | [Exploring Cross-Video and Cross-Modality Signals for Weakly-Supervised Audio-Visual Video Parsing]()
 NIPS | [Reducing Information Bottleneck for Weakly Supervised Semantic Segmentation]()
 NIPS | [Policy Learning Using Weak Supervision]()
 NIPS | [Joint Semantic Mining for Weakly Supervised RGB-D Salient Object Detection]()
-
 ### Previous
 **Pub.** |**Link** | **Brief Intro**
 :-: | :-: | :-
@@ -546,12 +530,6 @@ AAAI | [UAG: Uncertainty-Aware Attention Graph Neural Network for Defending Adve
 AAAI | [Model Uncertainty Guides Visual Object Tracking]()
 AAAI | [Uncertainty Quantification in CNN through the Bootstrap of Convex Neural Networks]()
 AAAI | [Joint Demosaicking and Denoising in the Wild: The Case of Training under Ground Truth Uncertainty]() -->
-
-
-### Previous
-**Year** |**Pub.** |**Link** |**Contribution**
-:-: | :-: | :- | :-
-
 ## 其它
 **Year** |**Pub.** |**Link** |**Contribution**
 :-: | :-: | :- | :-
