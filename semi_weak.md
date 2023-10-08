@@ -14,7 +14,6 @@
 :-: | :-: | :- | :-
 2022 | IET | [Medical image segmentation using deep learning: A survey](https://ietresearch.onlinelibrary.wiley.com/doi/10.1049/ipr2.12419) | 医学图像分割综述
 2023 | arXiv | [A Survey on Semi-Supervised Semantic Segmentation](https://blog.csdn.net/CV_Autobot/article/details/129234235) | 半监督语义分割综述
-
 ## 半监督
 ### 2023
 **Pub.** |**Link** | **Brief Intro**
@@ -86,7 +85,7 @@ MICCAI | [Clinical-realistic Annotation for Histopathology Images with Probabili
 MICCAI | *[Consistency-based Semi-supervised Evidential Active Learning for Diagnostic Radiograph Classification](https://arxiv.org/abs/2209.01858) | 基于一致性的半监督证据主动学习框架
 MICCAI | [Dynamic Bank Learning for Semi-supervised Federated Image Diagnosis with Class Imbalance](https://arxiv.org/abs/2206.13079) | 联邦学习
 MICCAI | *[FUSSNet: Fusing Two Sources of Uncertainty for Semi-Supervised Medical Image Segmentation](https://link.springer.com/chapter/10.1007/978-3-031-16452-1_46) | 不确定性来源
-MICCAI | [Leveraging Labeling Representations in Uncertainty-based Semi-supervised Segmentation](https://arxiv.org/abs/2203.05682) | 利用分割掩模的标签表示来估计像素级不确定性
+MICCAI | *[Leveraging Labeling Representations in Uncertainty-based Semi-supervised Segmentation](https://arxiv.org/abs/2203.05682) | 利用分割掩模的标签表示来估计像素级不确定性
 MICCAI | [Momentum Contrastive Voxel-wise Representation Learning for Semi-supervised Volumetric Medical Image Segmentation](https://arxiv.org/abs/2105.07059) | 对比学习
 MICCAI | [Reliability-aware Contrastive Self-ensembling for Semi-supervised Medical Image Classification](https://link.springer.com/chapter/10.1007/978-3-031-16431-6_71) | 可靠性感知
 MICCAI | [S5CL: Unifying Fully-Supervised, Self-Supervised, and Semi-Supervised Learning Through Hierarchical Contrastive Learning](https://arxiv.org/abs/2203.07307) | 一种用于全监督、自监督和半监督学习的统一框架
