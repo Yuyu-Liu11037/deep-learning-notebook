@@ -33,6 +33,7 @@ This Github repository is a collection of learning materials for beginners to le
 **No.**|**Name** |**Link** 
 :-: | :-: | :-
 01 |**机器学习原理**|[机器学习笔记整理](https://github.com/shunliz/Machine-Learning)
+02 |**数据降维算法**|[t-SNE](https://zhuanlan.zhihu.com/p/49073961)
 
 ### Deep Learning
 **No.**|**Name** |**Link** 

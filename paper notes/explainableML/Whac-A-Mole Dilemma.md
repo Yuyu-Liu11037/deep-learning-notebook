@@ -7,3 +7,9 @@
 1. 为multi-shortcut问题提出了2个dataset
 2. 全面评估现有的shortcut mitigation方法 (通过与ERM结果作对比的方式说明这些方法存在Whac-A-Mole问题)
 3. 作者提出的解决multi-shortcut的方法: LLE (?怎么、为什么能解决这个问题)
+
+# Related Work
+## "Use Shortcut Labels for Mitigation"
+- [Simple data balancing achieves competitive worst-group-accuracy](https://arxiv.org/abs/2110.14503#)
+- *[Distributionally Robust Neural Networks for Group Shifts: On the Importance of Regularization for Worst-Case Generalization](https://arxiv.org/abs/1911.08731)
+- [Towards Fairness in Visual Recognition: Effective Strategies for Bias Mitigation](https://arxiv.org/abs/1911.11834#)
