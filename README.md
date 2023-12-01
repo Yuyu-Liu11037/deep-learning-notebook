@@ -1,4 +1,6 @@
-# deep-learning-notebook
+# ! This Notebook is being Transfered to Notion Page (coming soon)
+
+
 This Github repository is a collection of learning materials for beginners to learn machine learning, including links and introductions to relevant books, tutorials, practical projects, and commonly used tools.
 
 
